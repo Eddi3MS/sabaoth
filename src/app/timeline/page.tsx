@@ -5,6 +5,14 @@ import './styles.css'
 
 const data = [
   {
+    id: 8,
+    name: 'Santo Agostinho',
+    location: 'Hípona, Argélia.',
+    date: '354 - 430',
+    order: 'Agostinianos',
+    wiki: '/Agostinho_de_Hipona',
+  },
+  {
     id: 4,
     name: 'São Bento',
     location: 'Núrsia, Itália.',
@@ -56,7 +64,7 @@ const data = [
     id: 7,
     name: 'São Padre Pio',
     location: 'Pietrelcina, Itália',
-    order: 'Capuchinhos',
+    order: 'Franciscanos',
     date: '1887 - 1968',
     wiki: '/Padre_Pio',
   },
