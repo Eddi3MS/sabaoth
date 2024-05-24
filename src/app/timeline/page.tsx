@@ -6,48 +6,56 @@ import {
 } from 'react-vertical-timeline-component'
 import './styles.css'
 import { useInView } from 'react-intersection-observer'
-import { Church } from 'lucide-react'
+import { Church, ExternalLink } from 'lucide-react'
 
 const data = [
   {
     id: 4,
+    name: 'São Bento',
+    location: 'Núrsia, Itália.',
+    date: '480 - 547',
+    order: 'Beneditinos',
+    wiki: '/Bento_de_Núrsia',
+  },
+  {
+    id: 6,
     name: 'São Francisco de Assis',
     location: 'Assis, Itália.',
     date: '1181 - 1226',
-    description:
-      'São Francisco de Assis, foi um frade católico nascido na atual Itália. Depois de uma juventude irrequieta e mundana, voltou-se para uma vida religiosa de completa pobreza, fundando a ordem mendicante dos Frades Menores, mais conhecidos como Franciscanos, que renovaram o Catolicismo de seu tempo.',
+    order: 'Franciscanos',
+    wiki: '/Francisco_de_Assis',
   },
   {
     id: 5,
     name: 'Santo Antônio de Pádua',
     location: 'Pádua, Itália.',
     date: '1195 - 1231',
-    description:
-      'Santo Antônio ou Antônio de Lisboa ou de Pádua, foi um Doutor da Igreja que viveu na viragem do século XII para o século XIII.',
+    order: 'Franciscanos',
+    wiki: '/Santo_António_de_Lisboa',
   },
   {
     id: 1,
     name: "Santa Tereza D'Ávila",
     location: 'Ávila, Espanha.',
     date: '1515 - 1582',
-    description:
-      'Freira carmelita, mística e santa católica, importante por suas obras sobre a vida contemplativa e espiritual e por sua atuação durante a Contrarreforma. Foi também uma das reformadoras da Ordem Carmelita e é considerada cofundadora da Ordem dos Carmelitas Descalços, juntamente com São João da Cruz.',
+    order: 'Carmelitas',
+    wiki: '/Teresa_de_Ávila',
   },
   {
     id: 2,
     name: 'São João da Cruz',
     location: 'Fontiveros, Espanha.',
-    description:
-      "Místico, sacerdote e frade carmelita espanhol, foi um dos mais importantes expoentes da Contrarreforma. Foi também um dos reformadoras da Ordem Carmelita e é considerado cofundador da Ordem dos Carmelitas Descalços, juntamente com Santa Tereza D'Ávila.",
+    order: 'Carmelitas',
     date: '1542 - 1591',
+    wiki: '/João_da_Cruz',
   },
   {
     id: 3,
     name: 'Santa Teresinha do Menino Jesus',
     location: 'Lisieux, França.',
-    description:
-      'Freira carmelita descalça francesa, lembrada como um dos mais influentes modelos de santidade para católicos e religiosos em geral, por seu "jeito prático e simples de abordar a vida espiritual".',
+    order: 'Carmelitas',
     date: '1873 - 1897',
+    wiki: '/Teresa_de_Lisieux',
   },
 ]
 
@@ -77,11 +85,24 @@ export default function Home() {
               iconStyle={{ background: 'rgb(29 ,78 ,216 ,1)', color: '#fff' }}
               icon={<Church />}
             >
-              <h3 className="text-lg font-bold">{s.name}</h3>
+              <h3 className="flex flex-wrap justify-between gap-y-2 gap-x-4">
+                <span className="text-lg font-bold flex items-start justify-between md:items-center gap-2 flex-1 sm:flex-initial ">
+                  <span className="min-w-52 sm:min-w-0">{s.name}</span>
+                  <a
+                    href={`https://pt.wikipedia.org/wiki${s.wiki}`}
+                    target="_blank"
+                    className="text-blue-400 hover:text-blue-500"
+                  >
+                    <ExternalLink size={14} />
+                  </a>
+                </span>
+                <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm h-5">
+                  {s.order}
+                </span>
+              </h3>
               <h4 className="text-muted-foreground font-semibold">
                 {s.location}
               </h4>
-              <p className="text-base">{s.description}</p>
             </VerticalTimelineElement>
           )
         })}
