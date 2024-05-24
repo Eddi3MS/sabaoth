@@ -15,7 +15,6 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-vertical-timeline-component": "^3.6.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -31,3 +30,4 @@
     "typescript": "^5"
   }
 }
+

@@ -1,12 +1,7 @@
 'use client'
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component'
+import { TimelineElement } from './_components'
 import './styles.css'
-import { useInView } from 'react-intersection-observer'
-import { Church, ExternalLink } from 'lucide-react'
 
 const data = [
   {
@@ -57,57 +52,33 @@ const data = [
     date: '1873 - 1897',
     wiki: '/Teresa_de_Lisieux',
   },
+  {
+    id: 7,
+    name: 'São Padre Pio',
+    location: 'Pietrelcina, Itália',
+    order: 'Capuchinhos',
+    date: '1887 - 1968',
+    wiki: '/Padre_Pio',
+  },
 ]
 
 export default function Home() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  })
-
   return (
-    <section ref={ref}>
-      <VerticalTimeline lineColor="" animate={true}>
-        {data.map((s, i) => {
-          return (
-            <VerticalTimelineElement
-              key={i}
-              visible={inView}
-              contentStyle={{
-                border: '2px solid  rgb(29 ,78 ,216 ,1)',
-                boxShadow: 'none',
-                borderRadius: '.5rem',
-              }}
-              contentArrowStyle={{
-                borderRight: '7px solid  rgb(29 ,78 ,216 ,1)',
-              }}
-              dateClassName="text-black lg:text-blue-800 !font-bold"
-              date={s.date}
-              iconStyle={{ background: 'rgb(29 ,78 ,216 ,1)', color: '#fff' }}
-              icon={<Church />}
-            >
-              <h3 className="flex flex-wrap justify-between gap-y-2 gap-x-4">
-                <span className="text-lg font-bold flex items-start justify-between md:items-center gap-2 flex-1 sm:flex-initial ">
-                  <span className="min-w-52 sm:min-w-0">{s.name}</span>
-                  <a
-                    href={`https://pt.wikipedia.org/wiki${s.wiki}`}
-                    target="_blank"
-                    className="text-blue-400 hover:text-blue-500"
-                  >
-                    <ExternalLink size={14} />
-                  </a>
-                </span>
-                <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm h-5">
-                  {s.order}
-                </span>
-              </h3>
-              <h4 className="text-muted-foreground font-semibold">
-                {s.location}
-              </h4>
-            </VerticalTimelineElement>
-          )
-        })}
-      </VerticalTimeline>
-    </section>
+    <div className="min-h-screen flex flex-col">
+      <div className="py-3 sm:max-w-[calc(1170px+2rem)] sm:mx-auto w-full px-4">
+        <div className="relative antialiased text-sm font-semibold">
+          <div className="hidden sm:block w-1 bg-zinc-400 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+          {data.map(({ id, ...rest }, i) => (
+            <TimelineElement
+              key={id}
+              {...rest}
+              side={i % 2 === 0 ? 'left' : 'right'}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }
 
