@@ -10,10 +10,9 @@ type TimelineElement = {
   side: 'left' | 'right'
 }
 
-const TimelineElement = (
-  { location, order, name, date, wiki, side }: TimelineElement,
-  ref: any
-) => {
+const TimelineElement = (props: TimelineElement) => {
+  const { location, order, name, date, wiki, side } = props
+
   return (
     <div className="mt-6 sm:mt-0 sm:mb-12">
       <div className="flex flex-col sm:flex-row items-center">
@@ -30,9 +29,11 @@ const TimelineElement = (
             <div className="border-blue-700 border-2 rounded shadow p-2 pt-6 md:pt-2 flex flex-col gap-2">
               <span className="flex justify-between">
                 <span className="text-muted-foreground text-xs">{date}</span>{' '}
-                <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm min-h-5">
-                  {order}
-                </span>
+                {order ? (
+                  <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm min-h-5">
+                    {order}
+                  </span>
+                ) : null}
               </span>
               <div>
                 <h3 className="text-lg font-bold flex items-center md:items-center gap-2">
