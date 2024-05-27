@@ -4,7 +4,7 @@ import { Search } from 'lucide-react'
 import { TimelineElement } from './_components'
 import './styles.css'
 import { useState } from 'react'
-import { normalizedCompare } from '@/ultils/stringCompare'
+import { normalizedCompare } from '@/utils/stringCompare'
 
 const data = [
   {
@@ -134,18 +134,20 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <h1 className="text-4xl text-center my-8">Timeline dos Santos</h1>
-      <label className="flex rounded-sm w-[min(250px,94%)] relative mx-auto mb-8">
-        <Search
-          className="absolute left-2 top-1/2 -translate-y-1/2"
-          size={14}
-        />
-        <input
-          type="text"
-          className="min-w-0 w-auto border flex-1 pl-8 py-2 pr-2"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </label>
+      <div className="bg-background z-20 sticky top-11">
+        <label className="flex rounded-sm w-[min(250px,94%)] mx-auto mb-8 relative">
+          <Search
+            className="absolute left-2 top-1/2 -translate-y-1/2"
+            size={14}
+          />
+          <input
+            type="text"
+            className="min-w-0 w-auto border flex-1 pl-8 py-2 pr-2"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </label>
+      </div>
 
       <div className="py-3 sm:max-w-[calc(1170px+2rem)] sm:mx-auto w-full px-4">
         <div className="relative antialiased text-sm font-semibold">

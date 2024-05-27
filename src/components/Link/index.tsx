@@ -10,11 +10,13 @@ const Link = ({
   ...rest
 }: ComponentProps<typeof NextLink>) => {
   const pathname = usePathname()
+
   return (
     <NextLink
       className={cn(
         'font-bold uppercase leading-3 transition-colors',
-        pathname === href
+        pathname === href ||
+          (pathname.includes('temperamentos') && href === '/temperamentos')
           ? 'text-blue-700 hover:text-blue-500'
           : 'text-gray-700 hover:text-gray-500',
         className

@@ -1,5 +1,4 @@
 import { Church, ExternalLink } from 'lucide-react'
-import { forwardRef } from 'react'
 
 type TimelineElement = {
   location: string
@@ -61,4 +60,4 @@ const TimelineElement = (props: TimelineElement) => {
   )
 }
 
-export default forwardRef(TimelineElement)
+export default TimelineElement

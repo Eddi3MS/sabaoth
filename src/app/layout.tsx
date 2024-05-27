@@ -21,7 +21,8 @@ export default function RootLayout({
         <header className="shadow-md px-4 sticky top-0 bg-background z-10">
           <nav className="w-[min(98%,1170px)] mx-auto py-4 flex gap-8">
             <Link href="/">Home</Link>
-            <Link href="/timeline">Timeline</Link>
+            <Link href="/timeline">Santos</Link>
+            <Link href="/temperamentos">Temperamentos</Link>
           </nav>
         </header>
         <main className="flex-1 flex flex-col">{children}</main>
