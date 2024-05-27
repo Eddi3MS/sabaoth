@@ -5,6 +5,7 @@ import { TimelineElement } from './_components'
 import './styles.css'
 import { useState } from 'react'
 import { normalizedCompare } from '@/utils/stringCompare'
+import { Metadata } from 'next'
 
 const data = [
   {
@@ -120,6 +121,11 @@ const data = [
     wiki: '/Carlo_Acutis',
   }, */
 ]
+
+export const metadata: Metadata = {
+  title: 'Timeline dos Santos',
+  description: 'Os santos da Igreja Católica ordenados em uma linha temporal',
+}
 
 export default function Home() {
   const [search, setSearch] = useState('')
