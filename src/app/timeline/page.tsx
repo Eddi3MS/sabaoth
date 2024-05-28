@@ -235,9 +235,9 @@ export default function Home() {
   }, [search])
   return (
     <div className="min-h-screen flex flex-col">
-      <h1 className="text-4xl text-center my-8">Timeline dos Santos</h1>
-      <div className="bg-background z-20 sticky top-32 md:top-11">
-        <label className="flex rounded-sm w-[min(250px,94%)] mx-auto mb-8 relative">
+      <h1 className="text-4xl text-center mt-8">Timeline dos Santos</h1>
+      <div className="bg-background z-[8] sticky top-[56px] md:top-11">
+        <label className="flex rounded-sm w-[min(250px,94%)] mx-auto my-4 relative">
           <Search
             className="absolute left-2 top-1/2 -translate-y-1/2"
             size={14}
