@@ -2,139 +2,241 @@
 
 import { normalizedCompare } from '@/utils/stringCompare'
 import { Search } from 'lucide-react'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { TimelineElement } from './_components'
 import './styles.css'
+import { Saint } from './types'
 
-const data = [
+let data: Saint[] = [
   {
-    id: 8,
-    name: 'Santo Agostinho',
-    location: 'Tagaste, Argélia',
-    date: '354 - 430',
-    order: 'Agostinianos',
-    wiki: '/Agostinho_de_Hipona',
-  },
-  {
-    id: 4,
+    id: 1,
     name: 'São Bento',
     location: 'Núrsia, Itália',
-    date: '480 - 547',
+    birth: 480,
+    decease: 547,
     order: 'Beneditinos',
     wiki: '/Bento_de_Núrsia',
   },
   {
-    id: 6,
+    id: 2,
+    name: 'Santo Agostinho',
+    location: 'Hipona, Argélia',
+    birth: 354,
+    decease: 430,
+    order: 'Agostinianos',
+    wiki: '/Agostinho_de_Hipona',
+  },
+  {
+    id: 3,
     name: 'São Francisco de Assis',
     location: 'Assis, Itália',
-    date: '1181 - 1226',
+    birth: 1181,
+    decease: 1226,
     order: 'Franciscanos',
     wiki: '/Francisco_de_Assis',
   },
   {
-    id: 5,
+    id: 4,
     name: 'Santo Antônio de Pádua',
-    location: 'Lisboa, Portugal',
-    date: '1195 - 1231',
+    location: 'Pádua, Itália',
+    birth: 1195,
+    decease: 1231,
     order: 'Franciscanos',
     wiki: '/Santo_António_de_Lisboa',
   },
   {
-    id: 11,
+    id: 5,
     name: 'São Boaventura',
     location: 'Civita di Bagnoregio, Itália',
-    date: '1221 - 1274',
+    birth: 1221,
+    decease: 1274,
     wiki: '/Boaventura',
     order: 'Franciscanos',
   },
   {
-    id: 10,
+    id: 6,
     name: 'Santo Tomás de Aquino',
     order: 'Dominicanos',
     location: 'Roccasecca, Itália',
-    date: '1225 - 1274',
+    birth: 1225,
+    decease: 1274,
     wiki: '/Tomás_de_Aquino',
   },
   {
-    id: 13,
+    id: 7,
     name: "Santa Joana D'arc",
     location: 'Domrémy, França',
-    order: '',
-    date: '1412 - 1431',
+    birth: 1412,
+    decease: 1431,
     wiki: "/Joana_D'arc",
   },
   {
-    id: 12,
+    id: 8,
     name: 'São Tomás More',
-    order: '',
-    date: '1478 - 1535',
+    birth: 1478,
+    decease: 1535,
     wiki: '/Thomas_More',
     location: 'Londres, Reino Unido',
   },
   {
-    id: 1,
+    id: 9,
     name: "Santa Tereza D'Ávila",
     location: 'Ávila, Espanha',
-    date: '1515 - 1582',
+    birth: 1515,
+    decease: 1582,
     order: 'Carmelitas',
     wiki: '/Teresa_de_Ávila',
   },
   {
-    id: 2,
+    id: 10,
     name: 'São João da Cruz',
     location: 'Fontiveros, Espanha',
     order: 'Carmelitas',
-    date: '1542 - 1591',
+    birth: 1542,
+    decease: 1591,
     wiki: '/João_da_Cruz',
   },
   {
-    id: 3,
+    id: 11,
+    name: 'Santo Afonso Maria de Ligório',
+    location: 'Nápoles, Itália',
+    birth: 1696,
+    decease: 1787,
+    wiki: '/Afonso_de_Ligório',
+    order: 'Redentoristas',
+  },
+  {
+    id: 12,
     name: 'Santa Teresinha do Menino Jesus',
-    location: 'Alençon, França',
+    location: 'Lisieux, França',
     order: 'Carmelitas',
-    date: '1873 - 1897',
+    birth: 1873,
+    decease: 1897,
     wiki: '/Teresa_de_Lisieux',
   },
   {
-    id: 7,
+    id: 13,
     name: 'São Padre Pio',
     location: 'Pietrelcina, Itália',
     order: 'Franciscanos',
-    date: '1887 - 1968',
+    birth: 1887,
+    decease: 1968,
     wiki: '/Padre_Pio',
   },
   {
-    id: 15,
+    id: 14,
     name: 'São Maximiliano Kolbe',
     location: 'Zduńska Wola, Polônia',
     order: 'Franciscanos',
     wiki: '/Maximiliano_Maria_Kolbe',
-    date: '1894 - 1941',
+    birth: 1894,
+    decease: 1941,
   },
-  /*   {
-    id: 9,
+  {
+    id: 15,
+    name: 'São Luís Maria de Montfort',
+    birth: 1673,
+    decease: 1716,
+    location: 'Montfort-sur-Meu, França',
+    wiki: '/Luís_Maria_Grignion_de_Montfort',
+  },
+  {
+    id: 16,
+    name: 'São Josemaría Escrivá',
+    birth: 1902,
+    decease: 1975,
+    location: 'Barbastro, Espanha',
+    wiki: '/Josemaría_Escrivá_de_Balaguer',
+  },
+  {
+    id: 17,
+    name: 'São Sebastião',
+    birth: 256,
+    decease: 288,
+    location: 'Narbona, França',
+    wiki: '/Sebastião_de_Narbona',
+  },
+  {
+    id: 18,
+    name: 'Santo Antão',
+    birth: 251,
+    decease: 356,
+    location: 'Heracleópolis Magna, Egito',
+    wiki: '/Antão,_o_Grande',
+  },
+  {
+    id: 19,
+    name: 'Santo Atanásio',
+    birth: 296,
+    decease: 373,
+    wiki: '/Atanásio_de_Alexandria',
+    location: 'Alexandria, Egito',
+  },
+  {
+    id: 20,
+    name: 'São Simão Stock',
+    birth: 1165,
+    decease: 1265,
+    wiki: '/Simão_Stock',
+    location: 'Aylesford, Reino Unido',
+    order: 'Carmelitas',
+  },
+  {
+    id: 21,
+    name: 'Santa Clara',
+    birth: 1194,
+    decease: 1253,
+    location: 'Assis, Itália',
+    wiki: '/Clara_de_Assis',
+    order: 'Franciscanos',
+  },
+  {
+    id: 22,
+    name: 'Santa Teresa de Calcutá',
+    birth: 1910,
+    decease: 1997,
+    location: 'Calcutá, Índia',
+    wiki: '/Madre_Teresa_de_Calcutá',
+  },
+  {
+    id: 23,
+    name: 'São João Paulo II',
+    birth: 1920,
+    decease: 2005,
+    location: 'Wadowice, Polônia',
+    wiki: '/Papa_João_Paulo_II',
+  },
+]
+
+/*   {
+    id: 
     name: 'São Carlo Acutis',
     location: 'Londres, Reino Unido',
     order: '',
-    date: '1991 - 2006',
+    birth: 1991, decease: 2006,
     wiki: '/Carlo_Acutis',
   }, */
-]
+
+data.sort((a, b) => {
+  return a.birth - b.birth || a.name.localeCompare(b.name)
+})
 
 export default function Home() {
   const [search, setSearch] = useState('')
 
-  const filteredData = search
-    ? data.filter(
-        (entry) =>
-          normalizedCompare(entry.name, search) ||
-          normalizedCompare(entry.order, search)
-      )
-    : data
+  const filteredData = useMemo(() => {
+    return search
+      ? data.filter(
+          (entry) =>
+            normalizedCompare(entry.name, search) ||
+            normalizedCompare(entry?.order || '', search)
+        )
+      : data
+  }, [search])
   return (
     <div className="min-h-screen flex flex-col">
       <h1 className="text-4xl text-center my-8">Timeline dos Santos</h1>
-      <div className="bg-background z-20 sticky top-11">
+      <div className="bg-background z-20 sticky top-32 md:top-11">
         <label className="flex rounded-sm w-[min(250px,94%)] mx-auto mb-8 relative">
           <Search
             className="absolute left-2 top-1/2 -translate-y-1/2"

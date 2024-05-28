@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <header className="shadow-md px-4 sticky top-0 bg-background z-10">
-          <nav className="w-[min(98%,1170px)] mx-auto py-4 flex gap-8">
+          <nav className="w-[min(98%,1170px)] mx-auto py-4 flex gap-8 flex-col  items-center md:flex-row">
             <Link href="/">Home</Link>
             <Link href="/timeline">Santos</Link>
             <Link href="/temperamentos">Temperamentos</Link>

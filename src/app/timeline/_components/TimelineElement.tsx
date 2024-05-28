@@ -1,16 +1,18 @@
 import { Church, ExternalLink } from 'lucide-react'
+import { Order } from '../types'
 
 type TimelineElement = {
   location: string
-  order: string
+  order?: Order
   name: string
-  date: string
+  birth: number
+  decease: number
   wiki: string
   side: 'left' | 'right'
 }
 
 const TimelineElement = (props: TimelineElement) => {
-  const { location, order, name, date, wiki, side } = props
+  const { location, order, name, birth, decease, wiki, side } = props
 
   return (
     <div className="mt-6 sm:mt-0 sm:mb-12">
@@ -27,7 +29,9 @@ const TimelineElement = (props: TimelineElement) => {
           >
             <div className="border-blue-700 border-2 rounded shadow p-2 pt-6 md:pt-2 flex flex-col gap-2">
               <span className="flex justify-between">
-                <span className="text-muted-foreground text-xs">{date}</span>{' '}
+                <span className="text-muted-foreground text-xs">
+                  {birth} - {decease}
+                </span>
                 {order ? (
                   <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm min-h-5">
                     {order}
@@ -52,8 +56,8 @@ const TimelineElement = (props: TimelineElement) => {
             </div>
           </div>
         </div>
-        <div className="rounded-full bg-blue-500 border-white border-4 w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-          <Church size={20} />
+        <div className="rounded-full bg-blue-500 border-white border-4 text-background w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+          <Church size={18} />
         </div>
       </div>
     </div>
