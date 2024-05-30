@@ -12,11 +12,7 @@ export default function Home() {
 
   const filteredData = useMemo(() => {
     return search
-      ? saints.filter(
-          (entry) =>
-            normalizedCompare(entry.name, search) ||
-            normalizedCompare(entry?.order || '', search)
-        )
+      ? saints.filter((entry) => normalizedCompare(entry.name, search))
       : saints
   }, [search])
   return (

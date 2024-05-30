@@ -1,20 +1,15 @@
 import { Church, ExternalLink } from 'lucide-react'
+import { Saint } from '../types'
 
-type TimelineElement = {
-  location: string
-  order?: string
-  name: string
-  birth: number
-  decease: number
-  wiki: string
+type TimelineElement = Omit<Saint, 'id'> & {
   side: 'left' | 'right'
 }
 
 const TimelineElement = (props: TimelineElement) => {
-  const { location, order, name, birth, decease, wiki, side } = props
+  const { location, name, birth, decease, description, wiki, side } = props
 
   return (
-    <div className="mt-6 sm:mt-0 sm:mb-12">
+    <div className="mt-6 sm:mt-0 sm:mb-6">
       <div className="flex flex-col sm:flex-row items-center">
         <div
           className={`flex w-full mx-auto items-center ${
@@ -26,16 +21,11 @@ const TimelineElement = (props: TimelineElement) => {
               side === 'left' ? ' sm:pr-8' : ' sm:pl-8'
             }`}
           >
-            <div className="border-blue-700 bg-background border-2 rounded shadow p-2 pt-6 md:pt-2 flex flex-col gap-2">
+            <div className="border-blue-700 bg-background border-2 rounded shadow p-4 pt-6 md:pt-4 flex flex-col gap-2">
               <span className="flex justify-between">
                 <span className="text-muted-foreground text-xs">
                   {birth} - {decease}
                 </span>
-                {order ? (
-                  <span className="text-sm font-semibold bg-blue-700 text-white flex items-center px-2 rounded-sm min-h-5">
-                    {order}
-                  </span>
-                ) : null}
               </span>
               <div>
                 <h3 className="text-lg font-bold flex items-center md:items-center gap-2">
@@ -51,6 +41,11 @@ const TimelineElement = (props: TimelineElement) => {
                 <h4 className="text-muted-foreground font-semibold">
                   {location}
                 </h4>
+              </div>
+              <div>
+                <p className="text-xs font-semibold leading-tight">
+                  {description ? description : ''}
+                </p>
               </div>
             </div>
           </div>
