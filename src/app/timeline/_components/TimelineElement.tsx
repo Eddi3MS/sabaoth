@@ -1,9 +1,8 @@
 import { Church, ExternalLink } from 'lucide-react'
-import { Order } from '../types'
 
 type TimelineElement = {
   location: string
-  order?: Order
+  order?: string
   name: string
   birth: number
   decease: number
@@ -27,7 +26,7 @@ const TimelineElement = (props: TimelineElement) => {
               side === 'left' ? ' sm:pr-8' : ' sm:pl-8'
             }`}
           >
-            <div className="border-blue-700 border-2 rounded shadow p-2 pt-6 md:pt-2 flex flex-col gap-2">
+            <div className="border-blue-700 bg-background border-2 rounded shadow p-2 pt-6 md:pt-2 flex flex-col gap-2">
               <span className="flex justify-between">
                 <span className="text-muted-foreground text-xs">
                   {birth} - {decease}
