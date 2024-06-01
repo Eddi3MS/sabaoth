@@ -47,4 +47,11 @@ export const prayers = [
     prayer:
       'Deus meus/Credo, adoro,/spero et amo Vos./Precor veniam pro eis/qui non credunt,/non adorant, non sperant/et non amant Vos.',
   },
+  {
+    id: 8,
+    name: 'Crux Sacra',
+    slug: 'crux-sacra',
+    prayer:
+      'Crux Sacra sit mihi lux/Non Draco sit mihi dux/Vade retro Satana!/Nunquam suade mihi vana./Sunt mala quæ libas/Ipse venena bibas.',
+  },
 ]
