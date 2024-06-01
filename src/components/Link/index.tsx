@@ -16,7 +16,8 @@ const Link = ({
       className={cn(
         'font-bold uppercase leading-3 transition-colors',
         pathname === href ||
-          (pathname.includes('temperamentos') && href === '/temperamentos')
+          (pathname.includes('temperamentos') && href === '/temperamentos') ||
+          (pathname.includes('prayers') && href === '/prayers')
           ? 'text-blue-700 hover:text-blue-500'
           : 'text-gray-700 hover:text-gray-500',
         className
