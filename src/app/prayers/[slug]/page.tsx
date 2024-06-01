@@ -1,5 +1,5 @@
+import { prayers } from '@/data/prayers'
 import React from 'react'
-import { prayers } from '../page'
 
 const Prayer = ({ params: { slug } }: { params: { slug: string } }) => {
   const current = prayers.find((o) => o.slug === slug) || prayers[0]
