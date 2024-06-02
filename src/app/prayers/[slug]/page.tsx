@@ -4,11 +4,11 @@ import React from 'react'
 const Prayer = ({ params: { slug } }: { params: { slug: string } }) => {
   const current = prayers.find((o) => o.slug === slug) || prayers[0]
   return (
-    <div className="flex flex-col items-center px-2">
+    <div className="flex flex-col items-start px-2 w-full">
       <h2 className="text-3xl mb-4 font-bold">{current.name}</h2>
-      <div>
+      <div className="w-full">
         {current.prayer.split('/').map((s, i) => (
-          <p key={i} className="font-semibold text-gray-800 text-lg">
+          <p key={i} className="font-semibold text-gray-800 text-lg leading-7">
             {s}
           </p>
         ))}
