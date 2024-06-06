@@ -1,108 +1,256 @@
-import { Saint } from './types'
+import { Saint } from '@/app/timeline/types'
 
 const saints: Saint[] = [
   {
-    id: 18,
+    id: 1,
+    name: 'Santo Hipólito',
+    birth: 170,
+    decease: 236,
+    location: 'Roma, Itália',
+    wiki: '/Hipólito_de_Roma',
+  },
+  {
+    id: 2,
+    name: 'São Cristóvão',
+    birth: 200,
+    decease: 251,
+    location: 'Lícia, Turquia',
+    wiki: '/Cristóvão_da_Lícia',
+  },
+  {
+    name: 'São Lourenço de Huesca',
+    birth: 225,
+    decease: 258,
+    location: 'Valência, Espanha',
+    id: 3,
+    wiki: '/Lourenço_de_Huesca',
+  },
+  {
+    id: 4,
+    name: 'Santa Águeda',
+    birth: 235,
+    decease: 251,
+    location: 'Catânia, Itália',
+    wiki: '/Águeda_de_Catânia',
+  },
+  {
+    id: 5,
+    name: 'Santo Alexandre de Alexandria',
+    birth: 250,
+    decease: 326,
+    location: 'Alexandria, Egito',
+    wiki: '/Alexandre_de_Alexandria',
+  },
+  {
+    id: 6,
     name: 'Santo Antão',
     birth: 251,
     decease: 356,
     location: 'Heracleópolis Magna, Egito',
     wiki: '/Antão,_o_Grande',
-    description:
-      'Também conhecido como Santo Antão do Egito, ou ainda O Pai de Todos os Monges, foi um santo cristão do Egito, um líder de destaque entre os Padres do Deserto.',
   },
   {
-    id: 17,
+    id: 7,
     name: 'São Sebastião',
     birth: 256,
     decease: 288,
     location: 'Narbonne, França',
     wiki: '/Sebastião_de_Narbona',
-    description:
-      'Originário de Narbonne e cidadão de Milão, foi um mártir e santo cristão, morto durante a perseguição levada a cabo pelo imperador romano Diocleciano.',
   },
   {
-    id: 19,
+    id: 8,
+    name: 'Santa Bárbara',
+    birth: 280,
+    decease: 317,
+    location: 'Nicomédia, Turquia',
+    wiki: '/Bárbara_de_Nicomédia',
+  },
+  {
+    id: 9,
+    name: 'Santa Doroteia',
+    birth: 290,
+    decease: 304,
+    location: 'Cesareia, Turquia',
+    wiki: '/Doroteia_de_Cesareia',
+  },
+  {
+    id: 10,
+    name: 'Santa Eulália de Mérida',
+    birth: 290,
+    decease: 304,
+    location: 'Mérida, Espanha',
+    wiki: '/Eulália_de_Mérida',
+  },
+  {
+    id: 11,
     name: 'Santo Atanásio',
     birth: 296,
     decease: 373,
     wiki: '/Atanásio_de_Alexandria',
     location: 'Alexandria, Egito',
-    description:
-      'Conhecido pelo árduo combate a heresia do Arianismo, foi o vigésimo arcebispo de Alexandria, cujo episcopado durou aproximadamente 45 anos.',
   },
   {
-    id: 2,
+    id: 12,
+    name: 'Santo Hilário de Poitiers',
+    birth: 300,
+    decease: 368,
+    location: 'Poitiers, França',
+    wiki: '/Hilário_de_Poitiers',
+  },
+  {
+    id: 13,
+    name: 'São Dâmaso I',
+    birth: 305,
+    decease: 384,
+    location: 'Guimarães, Portugal',
+    wiki: '/Dâmaso_I',
+  },
+  {
+    id: 14,
+    name: 'São Cirilo de Jerusalém',
+    birth: 313,
+    decease: 386,
+    location: 'Jerusalém, Israel',
+    wiki: '/Cirilo_de_Jerusalém',
+  },
+  {
+    id: 15,
+    name: 'São Basílio Magno',
+    birth: 329,
+    decease: 379,
+    location: 'Cesareia, Turquia',
+    wiki: '/Basílio_de_Cesareia',
+  },
+  {
+    id: 16,
+    name: 'São Gregório de Nissa',
+    birth: 335,
+    decease: 394,
+    location: 'Césaréia, Turquia',
+    wiki: '/Gregório_de_Nissa',
+  },
+  {
+    name: 'Santo Ambrósio',
+    birth: 340,
+    decease: 397,
+    location: 'Milão, Itália',
+    wiki: '/Ambrósio_de_Mediolano',
+    id: 17,
+  },
+  {
+    name: 'São Jerônimo',
+    birth: 347,
+    decease: 420,
+    wiki: '/Jerônimo',
+    location: 'Estridão, Dalmácia',
+    id: 18,
+  },
+  {
+    id: 19,
     name: 'Santo Agostinho',
     location: 'Hipona, Argélia',
     birth: 354,
     decease: 430,
     wiki: '/Agostinho_de_Hipona',
-    description:
-      'Foi um dos mais importantes teólogos e filósofos nos primeiros séculos do cristianismo, cujas obras foram muito influentes no desenvolvimento do cristianismo e filosofia ocidental.',
   },
   {
-    id: 47,
+    birth: 362,
+    decease: 383,
+    name: 'Santa Úrsula',
+    wiki: '/Úrsula_de_Colônia',
+    location: '\tColônia, Inglaterra',
+    id: 20,
+  },
+  {
+    id: 21,
     name: 'Santa Brígida da Irlanda',
     birth: 453,
     decease: 524,
     location: 'Louth, Irlanda',
     wiki: '/Brígida_da_Irlanda',
-    description:
-      'Foi uma religiosa católica irlandesa, freira, abadessa, e fundadora de diversos conventos. É considerada uma das santas padroeiras da Irlanda, juntamente com São Patrício e São Columba.',
   },
   {
-    id: 1,
+    id: 22,
     name: 'São Bento',
     location: 'Núrsia, Itália',
     birth: 480,
     decease: 547,
     wiki: '/Bento_de_Núrsia',
-    description:
-      'Foi um monge, ao qual é atribuída a organização das atividades da vida monástica. A Ordem de São Bento, uma das maiores ordens monásticas do mundo, recebe esse nome em homenagem a ele.',
   },
   {
-    id: 44,
+    id: 23,
     name: 'São Gregório Magno',
     birth: 540,
     decease: 604,
     location: 'Roma, Itália',
     wiki: '/Papa_Gregório_I',
-    description:
-      'Papa Gregório I, conhecido como São Gregório Magno, Doutor da Igreja, é conhecido principalmente por suas obras, mais numerosas que as de seus predecessores.',
   },
   {
-    id: 39,
+    id: 24,
+    name: 'São Egídio',
+    birth: 650,
+    decease: 720,
+    location: 'Atenas, Grécia',
+    wiki: '/Egídio,_o_eremita',
+  },
+  {
+    id: 25,
+    name: 'Santa Adelaide',
+    birth: 931,
+    decease: 999,
+    location: 'Burgundy, França',
+    wiki: '/Adelaide_da_Itália',
+  },
+  {
+    id: 26,
     name: 'Santo Henrique',
     birth: 973,
     decease: 1024,
     location: 'Baviera, Sacro Império Romano',
     wiki: '/Henrique_II_do_Sacro_Império_Romano-Germânico',
-    description:
-      'Foi o Imperador Romano-Germânico de 1014 até sua morte e o último monarca da dinastia otoniana.',
   },
   {
-    id: 34,
+    id: 27,
+    name: 'Santo Eduardo, o Confessor',
+    birth: 1003,
+    decease: 1066,
+    location: 'Islip, Inglaterra',
+    wiki: '/Eduardo,_o_Confessor',
+  },
+  {
+    id: 28,
+    name: 'São Bruno de Colônia',
+    birth: 1030,
+    decease: 1101,
+    location: 'Colônia, Alemanha',
+    wiki: '/Bruno_de_Colônia',
+  },
+  {
+    id: 29,
     name: 'Santa Margarida da Escócia',
     birth: 1045,
     decease: 1093,
     location: 'Hungria',
     wiki: '/Margaret_da_Escócia',
-    description:
-      'Através do exemplo de sua vida pessoal, levou um país inteiro ao cristianismo, desde a sua época até hoje. Assim foi a rainha Margarida, a santa protetora do povo escocês.',
   },
   {
-    id: 20,
+    id: 30,
+    name: 'São Bernardo de Claraval',
+    birth: 1090,
+    decease: 1153,
+    location: 'Dijon, França',
+    wiki: '/Bernardo_de_Claraval',
+  },
+  {
+    id: 31,
     name: 'São Simão Stock',
     birth: 1165,
     decease: 1265,
     wiki: '/Simão_Stock',
     location: 'Aylesford, Reino Unido',
-    description:
-      'Foi Prior Geral da Ordem dos Carmelitas. Nossa Senhora do Monte Carmelo apareceu-lhe numa visão e entregou-lhe o escapulário como sinal de sua proteção.',
   },
   {
-    id: 37,
+    id: 32,
     name: 'São Domingos de Gusmão',
     birth: 1170,
     decease: 1221,
@@ -110,7 +258,7 @@ const saints: Saint[] = [
     wiki: '/Domingos_de_Gusmão',
   },
   {
-    id: 3,
+    id: 33,
     name: 'São Francisco de Assis',
     location: 'Assis, Itália',
     birth: 1181,
@@ -118,7 +266,7 @@ const saints: Saint[] = [
     wiki: '/Francisco_de_Assis',
   },
   {
-    id: 24,
+    id: 34,
     name: 'Santa Juliana',
     birth: 1193,
     decease: 1258,
@@ -126,7 +274,7 @@ const saints: Saint[] = [
     wiki: '/Juliana_de_Mont_Cornillon',
   },
   {
-    id: 21,
+    id: 35,
     name: 'Santa Clara de Assis',
     birth: 1194,
     decease: 1253,
@@ -134,7 +282,7 @@ const saints: Saint[] = [
     wiki: '/Clara_de_Assis',
   },
   {
-    id: 4,
+    id: 36,
     name: 'Santo Antônio de Pádua',
     location: 'Pádua, Itália',
     birth: 1195,
@@ -142,7 +290,7 @@ const saints: Saint[] = [
     wiki: '/Santo_António_de_Lisboa',
   },
   {
-    id: 30,
+    id: 37,
     name: 'Santa Isabel da Hungria',
     birth: 1207,
     decease: 1231,
@@ -150,7 +298,7 @@ const saints: Saint[] = [
     wiki: '/Isabel_da_Hungria',
   },
   {
-    id: 5,
+    id: 38,
     name: 'São Boaventura',
     location: 'Civita di Bagnoregio, Itália',
     birth: 1221,
@@ -158,7 +306,7 @@ const saints: Saint[] = [
     wiki: '/Boaventura',
   },
   {
-    id: 6,
+    id: 39,
     name: 'Santo Tomás de Aquino',
     location: 'Roccasecca, Itália',
     birth: 1225,
@@ -166,7 +314,15 @@ const saints: Saint[] = [
     wiki: '/Tomás_de_Aquino',
   },
   {
-    id: 31,
+    id: 40,
+    name: 'Santa Gertrudes de Helfta',
+    birth: 1256,
+    decease: 1302,
+    location: 'Eisleben, Alemanha',
+    wiki: '/Gertrudes_de_Helfta',
+  },
+  {
+    id: 41,
     name: 'Santa Brígida da Suécia',
     birth: 1303,
     decease: 1373,
@@ -174,7 +330,7 @@ const saints: Saint[] = [
     wiki: '/Brígida_Birgersdotter_da_Suécia',
   },
   {
-    id: 26,
+    id: 42,
     name: 'Santa Catarina de Siena',
     birth: 1347,
     decease: 1380,
@@ -185,12 +341,28 @@ const saints: Saint[] = [
     name: 'Santa Rita',
     birth: 1381,
     decease: 1457,
-    id: 27,
+    id: 43,
     location: 'Cássia, Itália',
     wiki: '/Rita_de_Cássia',
   },
   {
-    id: 7,
+    id: 44,
+    name: 'Santo Antonino de Florença',
+    birth: 1389,
+    decease: 1459,
+    location: 'Florença, Itália',
+    wiki: '/Antonino_Pierozzi',
+  },
+  {
+    id: 45,
+    name: 'São Diogo de Alcalá',
+    birth: 1400,
+    decease: 1463,
+    location: 'San Nicolás del Puerto, Espanha',
+    wiki: '/Diogo_de_Alcalá',
+  },
+  {
+    id: 46,
     name: "Santa Joana D'arc",
     location: 'Domrémy, França',
     birth: 1412,
@@ -198,7 +370,7 @@ const saints: Saint[] = [
     wiki: "/Joana_D'arc",
   },
   {
-    id: 41,
+    id: 47,
     name: 'São Francisco de Paula',
     birth: 1416,
     decease: 1507,
@@ -207,6 +379,14 @@ const saints: Saint[] = [
   },
   {
     id: 48,
+    name: 'Santa Beatriz da Silva',
+    birth: 1426,
+    decease: 1492,
+    location: 'Ceuta, Marrocos',
+    wiki: '/Beatriz_da_Silva',
+  },
+  {
+    id: 49,
     name: 'Santa Angela de Merici',
     birth: 1474,
     decease: 1540,
@@ -214,7 +394,7 @@ const saints: Saint[] = [
     wiki: '/Angela_Merici',
   },
   {
-    id: 35,
+    id: 50,
     name: 'São Juan Diego',
     birth: 1474,
     decease: 1548,
@@ -222,7 +402,7 @@ const saints: Saint[] = [
     wiki: '/Juan_Diego_Cuauhtlatoatzin',
   },
   {
-    id: 8,
+    id: 51,
     name: 'São Tomás More',
     birth: 1478,
     decease: 1535,
@@ -230,7 +410,7 @@ const saints: Saint[] = [
     location: 'Londres, Reino Unido',
   },
   {
-    id: 32,
+    id: 52,
     name: 'São Francisco Xavier',
     birth: 1506,
     decease: 1552,
@@ -238,7 +418,7 @@ const saints: Saint[] = [
     wiki: '/Francisco_Xavier',
   },
   {
-    id: 9,
+    id: 53,
     name: "Santa Tereza D'Ávila",
     location: 'Ávila, Espanha',
     birth: 1515,
@@ -246,7 +426,7 @@ const saints: Saint[] = [
     wiki: '/Teresa_de_Ávila',
   },
   {
-    id: 10,
+    id: 54,
     name: 'São João da Cruz',
     location: 'Fontiveros, Espanha',
     birth: 1542,
@@ -254,7 +434,7 @@ const saints: Saint[] = [
     wiki: '/João_da_Cruz',
   },
   {
-    id: 43,
+    id: 55,
     name: 'São Francisco de Sales',
     birth: 1567,
     decease: 1622,
@@ -262,7 +442,7 @@ const saints: Saint[] = [
     wiki: '/Francisco_de_Sales',
   },
   {
-    id: 40,
+    id: 56,
     name: 'São Martinho de Porres',
     birth: 1579,
     decease: 1639,
@@ -270,7 +450,7 @@ const saints: Saint[] = [
     wiki: '/Martinho_de_Porres',
   },
   {
-    id: 42,
+    id: 57,
     name: 'São Vicente de Paulo',
     birth: 1581,
     decease: 1660,
@@ -278,7 +458,7 @@ const saints: Saint[] = [
     wiki: '/Vicente_de_Paulo',
   },
   {
-    id: 49,
+    id: 58,
     name: 'Santa Rosa de Lima',
     birth: 1586,
     decease: 1617,
@@ -286,7 +466,7 @@ const saints: Saint[] = [
     wiki: '/Rosa_de_Lima',
   },
   {
-    id: 46,
+    id: 59,
     name: 'Santa Margarida Maria Alacoque',
     birth: 1647,
     decease: 1690,
@@ -294,7 +474,7 @@ const saints: Saint[] = [
     wiki: '/Margarida_Maria_Alacoque',
   },
   {
-    id: 15,
+    id: 60,
     name: 'São Luís Maria de Montfort',
     birth: 1673,
     decease: 1716,
@@ -302,7 +482,7 @@ const saints: Saint[] = [
     wiki: '/Luís_Maria_Grignion_de_Montfort',
   },
   {
-    id: 11,
+    id: 61,
     name: 'Santo Afonso Maria de Ligório',
     location: 'Nápoles, Itália',
     birth: 1696,
@@ -310,7 +490,15 @@ const saints: Saint[] = [
     wiki: '/Afonso_de_Ligório',
   },
   {
-    id: 38,
+    id: 62,
+    name: 'São Geraldo Magela',
+    birth: 1726,
+    decease: 1755,
+    location: 'Muro Lucano, Itália',
+    wiki: '/Geraldo_Majela',
+  },
+  {
+    id: 63,
     name: 'Santa Catarina Labouré',
     birth: 1806,
     decease: 1876,
@@ -318,7 +506,23 @@ const saints: Saint[] = [
     wiki: '/Catarina_Labouré',
   },
   {
-    id: 36,
+    id: 64,
+    name: 'Santo Antônio Maria Claret',
+    birth: 1807,
+    decease: 1870,
+    location: 'Sallent, Espanha',
+    wiki: '/Antônio_Maria_Claret',
+  },
+  {
+    id: 65,
+    name: 'Santo Arnaldo Janssen',
+    birth: 1837,
+    decease: 1909,
+    location: 'Goch, Alemanha',
+    wiki: '/Arnaldo_Janssen',
+  },
+  {
+    id: 66,
     name: 'São Domingos Sávio',
     birth: 1842,
     decease: 1857,
@@ -330,11 +534,11 @@ const saints: Saint[] = [
     birth: 1844,
     decease: 1879,
     wiki: '/Bernadette_Soubirous',
-    id: 28,
+    id: 67,
     location: 'Lourdes, França',
   },
   {
-    id: 33,
+    id: 68,
     name: 'Santa Josephine Bakhita',
     birth: 1869,
     decease: 1947,
@@ -342,7 +546,7 @@ const saints: Saint[] = [
     wiki: '/Josefina_Bakhita',
   },
   {
-    id: 12,
+    id: 69,
     name: 'Santa Teresa de Lisieux',
     location: 'Lisieux, França',
     birth: 1873,
@@ -350,7 +554,7 @@ const saints: Saint[] = [
     wiki: '/Teresa_de_Lisieux',
   },
   {
-    id: 13,
+    id: 70,
     name: 'São Padre Pio',
     location: 'Pietrelcina, Itália',
     birth: 1887,
@@ -362,11 +566,11 @@ const saints: Saint[] = [
     birth: 1890,
     decease: 1902,
     location: 'Corinaldo, Itália',
-    id: 29,
+    id: 71,
     wiki: '/Maria_Goretti',
   },
   {
-    id: 14,
+    id: 72,
     name: 'São Maximiliano Kolbe',
     location: 'Zduńska Wola, Polônia',
     wiki: '/Maximiliano_Maria_Kolbe',
@@ -374,7 +578,7 @@ const saints: Saint[] = [
     decease: 1941,
   },
   {
-    id: 16,
+    id: 73,
     name: 'São Josemaría Escrivá',
     birth: 1902,
     decease: 1975,
@@ -382,7 +586,7 @@ const saints: Saint[] = [
     wiki: '/Josemaría_Escrivá_de_Balaguer',
   },
   {
-    id: 25,
+    id: 74,
     name: 'Santa Faustina',
     birth: 1905,
     decease: 1938,
@@ -390,7 +594,7 @@ const saints: Saint[] = [
     wiki: '/Faustina_Kowalska',
   },
   {
-    id: 22,
+    id: 75,
     name: 'Santa Teresa de Calcutá',
     birth: 1910,
     decease: 1997,
@@ -398,7 +602,15 @@ const saints: Saint[] = [
     wiki: '/Madre_Teresa_de_Calcutá',
   },
   {
-    id: 23,
+    id: 76,
+    name: 'Santa Dulce dos Pobres',
+    birth: 1914,
+    decease: 1992,
+    location: 'Salvador, Bahia',
+    wiki: '/Irmã_Dulce',
+  },
+  {
+    id: 77,
     name: 'São João Paulo II',
     birth: 1920,
     decease: 2005,
@@ -406,13 +618,14 @@ const saints: Saint[] = [
     wiki: '/Papa_João_Paulo_II',
   },
 ]
-
 /* 
 saints.sort((a, b) => {
   return a.birth - b.birth || a.name.localeCompare(b.name)
 })
 
-console.log(saints) */
+const saintss = saints.map((s, i) => ({ ...s, id: i + 1 }))
+
+console.log(saintss) */
 
 export { saints }
 

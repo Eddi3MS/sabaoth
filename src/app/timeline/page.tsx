@@ -1,11 +1,10 @@
 'use client'
 
+import { saints } from '@/data/saints'
 import { normalizedCompare } from '@/utils/stringCompare'
 import { Search } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { TimelineElement } from './_components'
-import { saints } from './saints'
-import './styles.css'
 
 export default function Home() {
   const [search, setSearch] = useState('')
@@ -16,8 +15,8 @@ export default function Home() {
       : saints
   }, [search])
   return (
-    <div className="min-h-screen flex flex-col">
-      <h1 className="text-4xl text-center mt-8">Timeline dos Santos</h1>
+    <div className="flex flex-col">
+      <h1 className="text-4xl text-center mt-8">Santos Católicos</h1>
       <div className="bg-background z-[8] sticky top-[56px] md:top-11">
         <label className="flex rounded-sm w-[min(250px,94%)] mx-auto my-4 relative">
           <Search
