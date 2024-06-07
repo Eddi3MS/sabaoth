@@ -554,7 +554,15 @@ const saints: Saint[] = [
     wiki: '/Teresa_de_Lisieux',
   },
   {
+    name: 'Santa Gemma Galgani',
     id: 70,
+    birth: 1878,
+    decease: 1903,
+    location: 'Capannori, Itália',
+    wiki: '/Gemma_Galgani',
+  },
+  {
+    id: 71,
     name: 'São Padre Pio',
     location: 'Pietrelcina, Itália',
     birth: 1887,
@@ -566,11 +574,11 @@ const saints: Saint[] = [
     birth: 1890,
     decease: 1902,
     location: 'Corinaldo, Itália',
-    id: 71,
+    id: 72,
     wiki: '/Maria_Goretti',
   },
   {
-    id: 72,
+    id: 73,
     name: 'São Maximiliano Kolbe',
     location: 'Zduńska Wola, Polônia',
     wiki: '/Maximiliano_Maria_Kolbe',
@@ -578,7 +586,7 @@ const saints: Saint[] = [
     decease: 1941,
   },
   {
-    id: 73,
+    id: 74,
     name: 'São Josemaría Escrivá',
     birth: 1902,
     decease: 1975,
@@ -586,7 +594,7 @@ const saints: Saint[] = [
     wiki: '/Josemaría_Escrivá_de_Balaguer',
   },
   {
-    id: 74,
+    id: 75,
     name: 'Santa Faustina',
     birth: 1905,
     decease: 1938,
@@ -594,7 +602,7 @@ const saints: Saint[] = [
     wiki: '/Faustina_Kowalska',
   },
   {
-    id: 75,
+    id: 76,
     name: 'Santa Teresa de Calcutá',
     birth: 1910,
     decease: 1997,
@@ -602,7 +610,7 @@ const saints: Saint[] = [
     wiki: '/Madre_Teresa_de_Calcutá',
   },
   {
-    id: 76,
+    id: 77,
     name: 'Santa Dulce dos Pobres',
     birth: 1914,
     decease: 1992,
@@ -610,7 +618,7 @@ const saints: Saint[] = [
     wiki: '/Irmã_Dulce',
   },
   {
-    id: 77,
+    id: 78,
     name: 'São João Paulo II',
     birth: 1920,
     decease: 2005,
@@ -618,9 +626,12 @@ const saints: Saint[] = [
     wiki: '/Papa_João_Paulo_II',
   },
 ]
-/* 
-saints.sort((a, b) => {
-  return a.birth - b.birth || a.name.localeCompare(b.name)
+
+/* saints.sort((a, b) => {
+  const aDate = a?.birth ?? a.decease
+  const bDate = b?.birth ?? b.decease
+
+  return aDate - bDate || a.name.localeCompare(b.name)
 })
 
 const saintss = saints.map((s, i) => ({ ...s, id: i + 1 }))

@@ -24,7 +24,7 @@ const TimelineElement = (props: TimelineElement) => {
             <div className="border-blue-700 bg-background border-2 rounded shadow p-4 pt-6 md:pt-4 flex flex-col gap-2">
               <span className="flex justify-between">
                 <span className="text-muted-foreground text-xs">
-                  {birth} - {decease}
+                  {birth ? birth : '?'} - {decease}
                 </span>
               </span>
               <div>
