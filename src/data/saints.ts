@@ -614,7 +614,7 @@ const saints: Saint[] = [
     name: 'Santa Dulce dos Pobres',
     birth: 1914,
     decease: 1992,
-    location: 'Salvador, Bahia',
+    location: 'Bahia, Brasil',
     wiki: '/Irmã_Dulce',
   },
   {
