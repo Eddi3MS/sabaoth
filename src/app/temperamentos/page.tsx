@@ -30,10 +30,8 @@ export default function Home() {
   const { checkedList, setCheckedList, result } = useChecklist()
 
   return (
-    <main className="flex min-h-screen flex-col px-4 py-8 gap-4 max-w-screen-2xl mx-auto">
-      <h1 className="text-2xl lg:text-4xl text-center font-bold">
-        Indicador de Temperamento
-      </h1>
+    <section className="flex min-h-screen flex-col px-4 pb-8 gap-4 max-w-screen-2xl mx-auto">
+      <h1 className="text-4xl text-center mt-8"> Indicador de Temperamento</h1>
       <div className="flex flex-col gap-2 max-w-screen-lg">
         <ul className="list-disc pl-5">
           <li className="text-sm lg:text-base font-semibold text-secondary-foreground">
@@ -123,7 +121,7 @@ export default function Home() {
           </div>
         </DialogContent>
       </Dialog>
-    </main>
+    </section>
   )
 }
 
