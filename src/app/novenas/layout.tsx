@@ -23,6 +23,7 @@ const Layout = ({ children }: PropsWithChildren) => {
             className="absolute left-0"
             size="icon"
             onClick={handleBack}
+            aria-label="Voltar para lista de novenas"
           >
             <ArrowLeft size={18} />
           </Button>

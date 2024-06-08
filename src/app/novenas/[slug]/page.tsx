@@ -35,13 +35,16 @@ const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
         <Text sentence={current.initial} />
 
         <div className="grid gap-4">
-          <div className="flex gap-2 items-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
+          <div className="flex gap-4 items-center justify-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
             Selecione o dia:{' '}
             <Select
               onValueChange={(strValue) => setDay(Number(strValue))}
               value={String(day)}
             >
-              <SelectTrigger className="w-[60px] text-blue-600 text-lg">
+              <SelectTrigger
+                className="w-[60px] text-blue-600 text-lg"
+                aria-label="Selecione o dia"
+              >
                 <SelectValue placeholder="Selecione o dia" />
               </SelectTrigger>
               <SelectContent>
