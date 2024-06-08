@@ -31,17 +31,17 @@ const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
   return (
     <div className="flex flex-col px-2 w-full ">
       <h2 className="text-3xl font-bold text-center">{current.title}</h2>
-      <div className="w-full flex flex-col gap-2 max-w-prose">
+      <div className="w-full flex flex-col gap-2 max-w-prose mx-auto">
         <Text sentence={current.initial} />
 
         <div className="grid gap-4">
-          <h3 className="flex gap-2 items-center text-2xl font-bold mt-8 indent-4 text-blue-600">
+          <div className="flex gap-2 items-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
             Selecione o dia:{' '}
             <Select
               onValueChange={(strValue) => setDay(Number(strValue))}
               value={String(day)}
             >
-              <SelectTrigger className="w-[60px]">
+              <SelectTrigger className="w-[60px] text-blue-600 text-lg">
                 <SelectValue placeholder="Selecione o dia" />
               </SelectTrigger>
               <SelectContent>
@@ -52,11 +52,11 @@ const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
                 ))}
               </SelectContent>
             </Select>
-          </h3>
+          </div>
 
-          <h4 className="text-2xl indent-4 font-bold text-gray-800">
+          <h3 className="text-2xl indent-4 font-bold text-gray-800 text-center">
             {daysText[day as keyof typeof daysText]} Dia
-          </h4>
+          </h3>
           <Text sentence={currentDay} />
         </div>
 

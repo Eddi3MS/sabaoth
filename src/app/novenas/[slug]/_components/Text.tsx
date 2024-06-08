@@ -11,7 +11,7 @@ const Paragraph = ({ text }: { text: string }) => {
         ' text-gray-800 text-lg leading-7',
         (isTitle || isSubtitle) && 'indent-4 font-bold',
         hasPadding && 'indent-4',
-        isTitle && 'text-2xl mt-8'
+        isTitle && 'text-2xl mt-8 text-center'
       )}
     >
       {isTitle || hasPadding || isSubtitle ? text.replace(text[0], '') : text}
