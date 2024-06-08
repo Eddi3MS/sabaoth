@@ -7,9 +7,11 @@ const Prayers = () => {
       {novenas.map((o) => (
         <li
           key={o.id}
-          className="underline underline-offset-4  hover:text-blue-600"
+          className="underline underline-offset-4 text-center hover:text-blue-600"
         >
-          <Link href={`/novenas/${o.slug}`}>{o.title}</Link>
+          <Link href={`/novenas/${o.slug}`}>
+            {o.title} <br className="md:hidden" /> ({o.period})
+          </Link>
         </li>
       ))}
     </ul>
