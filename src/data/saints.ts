@@ -427,6 +427,14 @@ const saints: Saint[] = [
   },
   {
     id: 54,
+    name: 'São José de Anchieta',
+    wiki: '/José_de_Anchieta',
+    location: 'Canárias, Império Espanhol',
+    birth: 1534,
+    decease: 1597,
+  },
+  {
+    id: 55,
     name: 'São João da Cruz',
     location: 'Fontiveros, Espanha',
     birth: 1542,
@@ -434,7 +442,7 @@ const saints: Saint[] = [
     wiki: '/João_da_Cruz',
   },
   {
-    id: 55,
+    id: 56,
     name: 'São Francisco de Sales',
     birth: 1567,
     decease: 1622,
@@ -442,7 +450,7 @@ const saints: Saint[] = [
     wiki: '/Francisco_de_Sales',
   },
   {
-    id: 56,
+    id: 57,
     name: 'São Martinho de Porres',
     birth: 1579,
     decease: 1639,
@@ -450,7 +458,7 @@ const saints: Saint[] = [
     wiki: '/Martinho_de_Porres',
   },
   {
-    id: 57,
+    id: 58,
     name: 'São Vicente de Paulo',
     birth: 1581,
     decease: 1660,
@@ -458,7 +466,7 @@ const saints: Saint[] = [
     wiki: '/Vicente_de_Paulo',
   },
   {
-    id: 58,
+    id: 59,
     name: 'Santa Rosa de Lima',
     birth: 1586,
     decease: 1617,
@@ -466,7 +474,7 @@ const saints: Saint[] = [
     wiki: '/Rosa_de_Lima',
   },
   {
-    id: 59,
+    id: 60,
     name: 'Santa Margarida Maria Alacoque',
     birth: 1647,
     decease: 1690,
@@ -474,7 +482,7 @@ const saints: Saint[] = [
     wiki: '/Margarida_Maria_Alacoque',
   },
   {
-    id: 60,
+    id: 61,
     name: 'São Luís Maria de Montfort',
     birth: 1673,
     decease: 1716,
@@ -482,7 +490,7 @@ const saints: Saint[] = [
     wiki: '/Luís_Maria_Grignion_de_Montfort',
   },
   {
-    id: 61,
+    id: 62,
     name: 'Santo Afonso Maria de Ligório',
     location: 'Nápoles, Itália',
     birth: 1696,
@@ -490,7 +498,7 @@ const saints: Saint[] = [
     wiki: '/Afonso_de_Ligório',
   },
   {
-    id: 62,
+    id: 63,
     name: 'São Geraldo Magela',
     birth: 1726,
     decease: 1755,
@@ -498,7 +506,7 @@ const saints: Saint[] = [
     wiki: '/Geraldo_Majela',
   },
   {
-    id: 63,
+    id: 64,
     name: 'Santa Catarina Labouré',
     birth: 1806,
     decease: 1876,
@@ -506,7 +514,7 @@ const saints: Saint[] = [
     wiki: '/Catarina_Labouré',
   },
   {
-    id: 64,
+    id: 65,
     name: 'Santo Antônio Maria Claret',
     birth: 1807,
     decease: 1870,
@@ -514,7 +522,7 @@ const saints: Saint[] = [
     wiki: '/Antônio_Maria_Claret',
   },
   {
-    id: 65,
+    id: 66,
     name: 'Santo Arnaldo Janssen',
     birth: 1837,
     decease: 1909,
@@ -522,7 +530,7 @@ const saints: Saint[] = [
     wiki: '/Arnaldo_Janssen',
   },
   {
-    id: 66,
+    id: 67,
     name: 'São Domingos Sávio',
     birth: 1842,
     decease: 1857,
@@ -534,11 +542,11 @@ const saints: Saint[] = [
     birth: 1844,
     decease: 1879,
     wiki: '/Bernadette_Soubirous',
-    id: 67,
+    id: 68,
     location: 'Lourdes, França',
   },
   {
-    id: 68,
+    id: 69,
     name: 'Santa Josephine Bakhita',
     birth: 1869,
     decease: 1947,
@@ -546,7 +554,7 @@ const saints: Saint[] = [
     wiki: '/Josefina_Bakhita',
   },
   {
-    id: 69,
+    id: 70,
     name: 'Santa Teresa de Lisieux',
     location: 'Lisieux, França',
     birth: 1873,
@@ -555,14 +563,14 @@ const saints: Saint[] = [
   },
   {
     name: 'Santa Gemma Galgani',
-    id: 70,
+    id: 71,
     birth: 1878,
     decease: 1903,
     location: 'Capannori, Itália',
     wiki: '/Gemma_Galgani',
   },
   {
-    id: 71,
+    id: 72,
     name: 'São Padre Pio',
     location: 'Pietrelcina, Itália',
     birth: 1887,
@@ -574,11 +582,11 @@ const saints: Saint[] = [
     birth: 1890,
     decease: 1902,
     location: 'Corinaldo, Itália',
-    id: 72,
+    id: 73,
     wiki: '/Maria_Goretti',
   },
   {
-    id: 73,
+    id: 74,
     name: 'São Maximiliano Kolbe',
     location: 'Zduńska Wola, Polônia',
     wiki: '/Maximiliano_Maria_Kolbe',
@@ -586,7 +594,7 @@ const saints: Saint[] = [
     decease: 1941,
   },
   {
-    id: 74,
+    id: 75,
     name: 'São Josemaría Escrivá',
     birth: 1902,
     decease: 1975,
@@ -594,7 +602,7 @@ const saints: Saint[] = [
     wiki: '/Josemaría_Escrivá_de_Balaguer',
   },
   {
-    id: 75,
+    id: 76,
     name: 'Santa Faustina',
     birth: 1905,
     decease: 1938,
@@ -602,7 +610,7 @@ const saints: Saint[] = [
     wiki: '/Faustina_Kowalska',
   },
   {
-    id: 76,
+    id: 77,
     name: 'Santa Teresa de Calcutá',
     birth: 1910,
     decease: 1997,
@@ -610,7 +618,7 @@ const saints: Saint[] = [
     wiki: '/Madre_Teresa_de_Calcutá',
   },
   {
-    id: 77,
+    id: 78,
     name: 'Santa Dulce dos Pobres',
     birth: 1914,
     decease: 1992,
@@ -618,7 +626,7 @@ const saints: Saint[] = [
     wiki: '/Irmã_Dulce',
   },
   {
-    id: 78,
+    id: 79,
     name: 'São João Paulo II',
     birth: 1920,
     decease: 2005,
@@ -639,18 +647,6 @@ const saintss = saints.map((s, i) => ({ ...s, id: i + 1 }))
 console.log(saintss) */
 
 export { saints }
-
-/* 
-{
-    id: ,
-    name: ,
-    birth: ,
-    decease: ,
-    location: ,
-    wiki: ,
- 
-  },
-*/
 
 /*   {
     id: 
