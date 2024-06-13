@@ -51,10 +51,7 @@ const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
             </Select>
           </div>
 
-          <h3 className="text-2xl indent-4 font-bold text-gray-800 text-center">
-            {current.mysteryTitle} {current.mysteryText[mystery]}
-          </h3>
-          <Text sentence={currentDay} />
+          <Text sentence={currentDay || ''} />
         </div>
 
         <Text sentence={current.final} />
