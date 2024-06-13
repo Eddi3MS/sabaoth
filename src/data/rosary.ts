@@ -37,7 +37,7 @@ export const rosary = [
       sorrowful: 'Dolororos',
       glorious: 'Gloriosos',
     },
-    mysteryTitle: 'Misterios',
+    mysteryTitle: 'Mistérios',
   },
   {
     id: 3,
@@ -56,6 +56,6 @@ export const rosary = [
       sorrowful: 'Dolororos',
       glorious: 'Gloriosos',
     },
-    mysteryTitle: 'Misterios',
+    mysteryTitle: 'Mistérios',
   },
 ]
