@@ -15,7 +15,7 @@ const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
   const current = rosary.find((o) => o.slug === slug) || rosary[0]
 
   const [mystery, setMystery] =
-    useState<keyof typeof current.mysteries>('glorious')
+    useState<keyof typeof current.mysteries>('joyful')
 
   const options = objKeys(current.mysteries)
   const currentDay = current.mysteries[mystery]
