@@ -7,26 +7,18 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { novenas } from '@/data/novenas'
+import { rosary } from '@/data/rosary'
+import { objKeys } from '@/utils/objectTypedMethods'
 import { useState } from 'react'
 
-const daysText = {
-  1: 'Primeiro',
-  2: 'Segundo',
-  3: 'Terceiro',
-  4: 'Quarto',
-  5: 'Quinto',
-  6: 'Sexto',
-  7: 'Sétimo',
-  8: 'Oitavo',
-  9: 'Nono',
-}
-const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
-  const [day, setDay] = useState<number>(1)
+const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
+  const current = rosary.find((o) => o.slug === slug) || rosary[0]
 
-  const current = novenas.find((o) => o.slug === slug) || novenas[0]
-  const days = Object.keys(current.days).length
-  const currentDay = current.days[day as keyof typeof current.days]
+  const [mystery, setMystery] =
+    useState<keyof typeof current.mysteries>('glorious')
+
+  const options = objKeys(current.mysteries)
+  const currentDay = current.mysteries[mystery]
 
   return (
     <div className="flex flex-col px-2 w-full ">
@@ -36,21 +28,23 @@ const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
 
         <div className="grid gap-4">
           <div className="flex gap-4 items-center justify-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
-            Selecione o dia:{' '}
+            {current.mysteryTitle}:{' '}
             <Select
-              onValueChange={(strValue) => setDay(Number(strValue))}
-              value={String(day)}
+              onValueChange={(strValue: keyof typeof current.mysteries) =>
+                setMystery(strValue)
+              }
+              value={mystery}
             >
               <SelectTrigger
-                className="w-[60px] text-blue-600 text-lg"
+                className="max-w-fit text-blue-600 text-lg gap-2"
                 aria-label="Selecione o dia"
               >
                 <SelectValue placeholder="Selecione o dia" />
               </SelectTrigger>
               <SelectContent>
-                {Array.from({ length: days }).map((_, i) => (
-                  <SelectItem key={i} value={String(i + 1)}>
-                    {i + 1}
+                {options.map((opt) => (
+                  <SelectItem key={opt} value={opt}>
+                    {current.mysteryText[opt]}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -58,17 +52,15 @@ const Novena = ({ params: { slug } }: { params: { slug: string } }) => {
           </div>
 
           <h3 className="text-2xl indent-4 font-bold text-gray-800 text-center">
-            {daysText[day as keyof typeof daysText]} Dia
+            {current.mysteryTitle} {current.mysteryText[mystery]}
           </h3>
           <Text sentence={currentDay} />
         </div>
 
         <Text sentence={current.final} />
-
-        {day === days ? <Text sentence={current.last_day} /> : null}
       </div>
     </div>
   )
 }
 
-export default Novena
+export default Rosary

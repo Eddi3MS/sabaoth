@@ -15,6 +15,7 @@ const Nav = ({ className }: HTMLAttributes<HTMLDivElement>) => {
       <Link href="/temperamentos">Temperamentos</Link>
       <Link href="/prayers">Orações</Link>
       <Link href="/novenas">Novenas</Link>
+      <Link href="/rosary">Rosario</Link>
     </nav>
   )
 }

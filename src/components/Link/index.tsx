@@ -18,7 +18,8 @@ const Link = ({
         pathname === href ||
           (pathname.includes('temperamentos') && href === '/temperamentos') ||
           (pathname.includes('prayers') && href === '/prayers') ||
-          (pathname.includes('novenas') && href === '/novenas')
+          (pathname.includes('novenas') && href === '/novenas') ||
+          (pathname.includes('rosary') && href === '/rosary')
           ? 'text-blue-700 hover:text-blue-500'
           : 'text-gray-700 hover:text-gray-500',
         className

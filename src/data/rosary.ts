@@ -1,0 +1,42 @@
+export const rosary = [
+  {
+    id: 1,
+    slug: 'rosary-latim',
+    title: 'Rosario em Latim',
+    initial: `#Initium/$Signum Crucis/In nomine Patris, et Filii, et Spiritus Sancti. Amen./$Credo/Credo in Deum Patrem omnipotentem, Creatorem cæli et terræ. Et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad inferos, tertia die resurrexit a mortuis, ascendit ad cælos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam æternam. Amen./$Pater Noster/Pater Noster, qui es in cælis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in cælo et in terra. Panem nostrum quotidianum da nobis hodie, et dimitte nobis debita nostra sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen./$3x Ave Maria/Ave Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc, et in hora mortis nostræ. Amen./$Gloria/Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, et in sæcula sæculorum. Amen./$O mi Iesu/O mi Iesu, dimitte nobis debita nostra, libera nos ab igne inferni, conduc in cælum omnes animas, præsertim illas quæ maxime indigent misericordia tua.`,
+    final: `#Orationes ad Finem Rosarii Dicendæ/$Salve Regina/Salve, Regina, mater misericordiæ, vita, dulcedo, et spes nostra, salve. Ad te clamamus exsules filii Hevæ. Ad te suspiramus, gementes et flentes in hac lacrimarum valle. Eia, ergo, advocata nostra, illos tuos misericordes oculos ad nos converte. Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende. O clemens, O pia, O dulcis Virgo Maria./Ora pro nobis, Sancta Dei Genetrix./Ut digni efficiamur promissionibus Christi./$Oremus/DEUS, cuius Unigenitus per vitam, mortem et resurrectionem suam nobis salutis æternæ præmia comparavit, concede, quæsumus: ut hæc mysteria sacratissimo beatæ Mariæ Virginis Rosario recolentes, et imitemur quod continent, et quod promittunt assequamur. Per eundem Christum Dominum nostrum. Amen.`,
+    mysteries: {
+      joyful: `$Incarnationis mysterium:/Angelus Gabriel nuntiavit Mariae, Maria concepit de Spiritu Sancto, et verbum caro factum est./$Visitationis mysterium:/Maria Virgo Elisabeth visitat et magnificat Dominum./$Nativitatis mysterium:/Iesus in Bethlehem nascitur./$Praesentationis mysterium:/Iesus in templo praesentatur./$Inventionis mysterium:/Puer Iesus de iis, qui patres ipsius sunt, sollicitus.`,
+      luminous: `$Baptismatis mysterium:/Iordane in flumine Iesus a Ioanne baptizatur et Spiritus super eum descendit./$Nuptiarum in Cana mysterium:/Iesus aquam in vinum commutat propter Mariae intercessionem./$Proclamationis regni Dei mysterium:/Iesus adventum regni Dei nuntiat et ad conversionem hortatur./$Transfigurationis mysterium:/Iesus in monte Tabor transfiguratur./$Eucharistiae mysterium:/Iesus in cenaculo Eucharistiam instituit, corpus ac sanguinem suum nobis donans.`,
+      sorrowful: `$Agoniae mysterium:/Iesus in horto Gethsemani orat./$Flagellationis mysterium:/Iesus flagellis caeditur./$Ecce homo mysterium:/Iesus spinis coronatur./$Viae crucis mysterium:/Iesus cruce oneratus Calvariae locum adit./$Mortis mysterium:/Iesus in cruce moritur, stabat iuxta crucem Iesu mater eius.`,
+      glorious: `$Resurrectionis mysterium:/Iesus a mortuis resurgit./$Ascensionis mysterium:/Iesus caelos ad Patris gloriam ascendit./$Missionis Spiritus Sancti mysterium:/Spiritus Paraclitus supra discipulos descendit./$Assumptionis Beatae Mariae Virginis mysterium:/Assumpta est Maria in caelum./$Glorificationis Beatae Mariae Virginis mysterium:/Maria Virgo in caelis regina coronatur.`,
+    },
+    mysteryText: {
+      joyful: 'Gaudii',
+      luminous: 'Lucis',
+      sorrowful: 'Doloris',
+      glorious: 'Gloriae',
+    },
+    mysteryTitle: 'Mysteria',
+  },
+  {
+    id: 2,
+    slug: 'rosario-portugues',
+    title: 'Rosário em Português',
+    initial: `#Início/$Sinal da Cruz/Em nome do Pai, e do Filho, e do Espírito Santo. Amém./$Creio/Creio em Deus Pai todo-poderoso, Criador do céu e da terra. E em Jesus Cristo, seu único Filho, nosso Senhor, que foi concebido pelo Espírito Santo, nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado, desceu aos infernos, ressuscitou dos mortos ao terceiro dia, subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, de onde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja católica, na comunhão dos santos, na remissão dos pecados, na ressureição da carne, na vida eterna. Amém./$Pai Nosso/Pai nosso, que estais no céu, santificado seja o vosso nome. Venha a nós o vosso reino. Seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém./$3x Ave Maria/Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém./$Glória/Glória ao Pai, ao Filho, e ao Espírito Santo. Como era no princípio, agora e sempre, por todos os séculos dos séculos. Amém./$Ó meu Jesus/Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, principalmente as que mais precisarem da vossa misericórdia.`,
+    final: `#Orações ao Final do Rosário/$Salve Rainha/Salve, Rainha, mãe de misericórdia, vida, doçura, e esperança nossa, salve. A vós bradamos, os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei. E depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre. Ó clemente, ó piedosa, ó doce Virgem Maria./Rogai por nós, Santa Mãe de Deus./Para que sejamos dignos das promessas de Cristo./$Oremos/DEUS, cujo Filho Unigênito, por sua vida, morte e ressurreição, nos conquistou as recompensas da salvação eterna, concedei-nos, vos suplicamos, que, meditando sobre estes mistérios no santíssimo Rosário da bem-aventurada Virgem Maria, imitemos o que eles contêm e obtenhamos o que prometem. Pelo mesmo Cristo nosso Senhor. Amém.`,
+    mysteries: {
+      joyful: `$Mistério da Encarnação:/O anjo Gabriel anunciou a Maria, Maria concebeu pelo Espírito Santo, e o verbo se fez carne./$Mistério da Visitação:/A Virgem Maria visita Isabel e magnifica o Senhor./$Mistério da Natividade:/Jesus nasce em Belém./$Mistério da Apresentação:/Jesus é apresentado no templo./$Mistério da Perda e do Encontro de Jesus no Templo:/O menino Jesus é encontrado entre os doutores após três dias.`,
+      luminous: `$Mistério do Batismo de Jesus:/Jesus é batizado por João no rio Jordão e o Espírito desce sobre ele./$Mistério das Bodas de Caná:/Jesus transforma a água em vinho pela intercessão de Maria./$Mistério do Anúncio do Reino de Deus:/Jesus anuncia a chegada do Reino de Deus e chama à conversão./$Mistério da Transfiguração:/Jesus se transfigura no monte Tabor./$Mistério da Instituição da Eucaristia:/Jesus institui a Eucaristia no cenáculo, nos dando seu corpo e sangue.`,
+      sorrowful: `$Mistério da Agonia no Horto:/Jesus reza no jardim do Getsêmani./$Mistério da Flagelação de Jesus:/Jesus é flagelado./$Mistério da Coroação de Espinhos:/Jesus é coroado de espinhos./$Mistério da Via Sacra:/Jesus carrega a cruz até o Calvário./$Mistério da Crucificação e Morte de Jesus:/Jesus morre na cruz, estando sua mãe ao lado.`,
+      glorious: `$Mistério da Ressurreição:/Jesus ressuscita dos mortos./$Mistério da Ascensão:/Jesus ascende ao céu à glória do Pai./$Mistério da Descida do Espírito Santo:/O Espírito Santo desce sobre os discípulos./$Mistério da Assunção de Maria:/Maria é assunta ao céu./$Mistério da Coroação de Maria:/Maria é coroada rainha do céu.`,
+    },
+    mysteryText: {
+      joyful: 'Gozosos',
+      luminous: 'Luminosos',
+      sorrowful: 'Dolororos',
+      glorious: 'Gloriosos',
+    },
+    mysteryTitle: 'Misterios',
+  },
+]
