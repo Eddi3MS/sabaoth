@@ -21,7 +21,7 @@ export const rosary = [
   },
   {
     id: 2,
-    slug: 'rosario-portugues',
+    slug: 'rosary-portuguese',
     title: 'Rosário em Português',
     initial: `#Início/$Sinal da Cruz/Em nome do Pai, e do Filho, e do Espírito Santo. Amém./$Creio/Creio em Deus Pai todo-poderoso, Criador do céu e da terra. E em Jesus Cristo, seu único Filho, nosso Senhor, que foi concebido pelo Espírito Santo, nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado, desceu aos infernos, ressuscitou dos mortos ao terceiro dia, subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, de onde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja católica, na comunhão dos santos, na remissão dos pecados, na ressureição da carne, na vida eterna. Amém./$Pai Nosso/Pai nosso, que estais no céu, santificado seja o vosso nome. Venha a nós o vosso reino. Seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém./$3x Ave Maria/Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém./$Glória/Glória ao Pai, ao Filho, e ao Espírito Santo. Como era no princípio, agora e sempre, por todos os séculos dos séculos. Amém./$Ó meu Jesus/Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, principalmente as que mais precisarem da vossa misericórdia.`,
     final: `#Orações ao Final do Rosário/$Salve Rainha/Salve, Rainha, mãe de misericórdia, vida, doçura, e esperança nossa, salve. A vós bradamos, os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei. E depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre. Ó clemente, ó piedosa, ó doce Virgem Maria./Rogai por nós, Santa Mãe de Deus./Para que sejamos dignos das promessas de Cristo./$Oremos/DEUS, cujo Filho Unigênito, por sua vida, morte e ressurreição, nos conquistou as recompensas da salvação eterna, concedei-nos, vos suplicamos, que, meditando sobre estes mistérios no santíssimo Rosário da bem-aventurada Virgem Maria, imitemos o que eles contêm e obtenhamos o que prometem. Pelo mesmo Cristo nosso Senhor. Amém.`,
@@ -41,7 +41,7 @@ export const rosary = [
   },
   {
     id: 3,
-    slug: 'rosario-sao-luis-maria-montfort',
+    slug: 'rosary-saint-luis-maria-montfort',
     title: 'Rosário - São Luís Maria Grignon de Montfort',
     initial: `#Oração Inicial/Uno-me a todos os santos que estão no Céu, a todos os justos que estão sobre a terra, a todas as almas fiéis que estão neste lugar. Uno-me a vós, meu Jesus, para louvar dignamente vossa Santa Mãe, e louvar-vos a vós, nela e por ela./Renuncio a todas as distrações que me sobrevierem durante este Rosário, que quero recitar com modéstia, atenção e devoção, como se fosse o último de minha vida. Assim seja./Nós vos oferecemos, Trindade Santíssima, este Credo, para honrar os mistérios todos de nossa Fé; esse Pai-Nosso e estas três Ave-Marias, para honrar a unidade de vossa essência e a trindade de vossas pessoas. Pedimo-vos uma fé viva, uma esperança firme e uma caridade ardente./$Credo, Pai-Nosso.../_Ave Maria, Filha bem-amada do Pai Eterno, cheia de graça.../_Ave Maria, Mãe admirável de Deus Filho, cheia de graça.../_Ave Maria, Esposa fidelíssima de Deus Espirito Santo, cheia de graça.../$Gloria ao Pai...`,
     final: `#Oração Final/Eu vos saúdo, Maria, Filha bem-amada do eterno Padre, Mãe admirável do Filho, Esposa mui fiel do Espírito Santo, templo augusto da Santíssima Trindade; eu vos saúdo, soberana Princesa, a quem tudo está submisso no Céu e na Terra; eu vos saúdo, seguro refúgio dos pecadores, que jamais repelistes pessoa alguma. Pecador que sou, me prostro a vossos pés, e vos peço de me obter de Jesus, vosso amado Filho, a contrição e o perdão de todos os meus pecados, e a divina sabedoria./Eu me consagro todo a vós, com tudo que possuo. Eu vos tomo, hoje, por minha Mãe e Senhora. Tratai-me, pois, como o último de vossos filhos e o mais obediente de vossos escravos. Atendei, minha Princesa, atendei aos suspiros dum coração que deseja amar-vos e servir-vos fielmente. Que ninguém diga que, entre todos que a vós recorreram, seja eu o primeiro desamparado./Ó minha esperança, ó minha vida, ó minha fiel e Imaculada Virgem Maria, defendei-me, nutri-me, escutai-me, instrui-me, salvai-me. Assim seja.`,
@@ -55,6 +55,20 @@ export const rosary = [
       luminous: 'Luminosos',
       sorrowful: 'Dolororos',
       glorious: 'Gloriosos',
+    },
+    mysteryTitle: 'Mistérios',
+  },
+  {
+    id: 4,
+    slug: 'rosary-of-our-lady-of-tears',
+    title: 'Rosário das Lágrimas',
+    initial: `#Oração Inicial/Eis-nos aqui aos Vossos pés, ó dulcíssimo Jesus Crucificado, para Vos oferecermos as lágrimas d’Aquela que, com tanto amor, Vos acompanhou no caminho doloroso do Calvário. Fazei, ó bom Mestre, que nós saibamos aproveitar da lição que elas nos dão, para que, na Terra, realizando a Vossa Santíssima Vontade, possamos um dia, no Céu, Vos louvar por toda a eternidade./`,
+    final: `#Repetir 3 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./#Oração Final/Virgem Santíssima e Mãe das Dores, nós Vos pedimos que junteis os Vossos rogos aos nossos, a fim de que Jesus, Vosso Divino Filho, a quem nos dirigimos em nome das Vossas lágrimas de Mãe, ouça as nossas preces e nos conceda, com as graças que desejamos, a coroa da vida eterna. Amém./#Jaculatórias finais/Por Vossa mansidão divina, ó Jesus Manietado, salvai o Brasil do inimigo ameaçador!/Ó Virgem Dolorosíssima, as Vossas Lágrimas derrubaram o império infernal!`,
+    mysteries: {
+      joyful: `#Repetir 7 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./7x -> Meu Jesus, ouvi os nossos rogos, pelas Lágrimas de Vossa Mãe Santíssima./Irmã Amália, rogai por nós./Madre Vilac, rogai por nós.`,
+    },
+    mysteryText: {
+      joyful: 'Gozosos',
     },
     mysteryTitle: 'Mistérios',
   },

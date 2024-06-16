@@ -27,29 +27,31 @@ const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
         <Text sentence={current.initial} />
 
         <div className="grid gap-4">
-          <div className="flex gap-4 items-center justify-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
-            {current.mysteryTitle}:{' '}
-            <Select
-              onValueChange={(strValue: keyof typeof current.mysteries) =>
-                setMystery(strValue)
-              }
-              value={mystery}
-            >
-              <SelectTrigger
-                className="max-w-fit text-blue-600 text-lg gap-2"
-                aria-label="Selecione o dia"
+          {options.length > 1 ? (
+            <div className="flex gap-4 items-center justify-center text-2xl font-bold mt-8 text-white bg-blue-600 p-4">
+              {current.mysteryTitle}:{' '}
+              <Select
+                onValueChange={(strValue: keyof typeof current.mysteries) =>
+                  setMystery(strValue)
+                }
+                value={mystery}
               >
-                <SelectValue placeholder="Selecione o dia" />
-              </SelectTrigger>
-              <SelectContent>
-                {options.map((opt) => (
-                  <SelectItem key={opt} value={opt}>
-                    {current.mysteryText[opt]}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+                <SelectTrigger
+                  className="max-w-fit text-blue-600 text-lg gap-2"
+                  aria-label="Selecione o dia"
+                >
+                  <SelectValue placeholder="Selecione o dia" />
+                </SelectTrigger>
+                <SelectContent>
+                  {options.map((opt) => (
+                    <SelectItem key={opt} value={opt}>
+                      {current.mysteryText[opt]}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          ) : null}
 
           <Text sentence={currentDay || ''} />
         </div>
