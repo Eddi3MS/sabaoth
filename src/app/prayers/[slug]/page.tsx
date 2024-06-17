@@ -1,3 +1,4 @@
+import Text from '@/components/Text'
 import { prayers } from '@/data/prayers'
 import React from 'react'
 
@@ -6,13 +7,7 @@ const Prayer = ({ params: { slug } }: { params: { slug: string } }) => {
   return (
     <div className="flex flex-col  px-2 w-full  max-w-prose mx-auto">
       <h2 className="text-3xl mb-4 font-bold text-center">{current.name}</h2>
-      <div className="w-full">
-        {current.prayer.split('/').map((s, i) => (
-          <p key={i} className="font-semibold text-gray-800 text-lg leading-7">
-            {s}
-          </p>
-        ))}
-      </div>
+      <Text sentence={current.prayer} />
     </div>
   )
 }

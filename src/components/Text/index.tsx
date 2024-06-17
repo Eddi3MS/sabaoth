@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
 
-const Paragraph = ({ text }: { text: string }) => {
+const Line = ({ text }: { text: string }) => {
   const isTitle = text.startsWith('#')
   const isSubtitle = text.startsWith('$')
   const hasPadding = text.startsWith('_')
@@ -11,7 +11,7 @@ const Paragraph = ({ text }: { text: string }) => {
 
   if (isTitle) {
     return (
-      <h3 className=" text-gray-800 leading-7 select-none indent-4 font-bold text-2xl mt-8 text-center">
+      <h3 className=" text-gray-800 leading-7 select-none indent-4 font-bold text-2xl mt-4 text-center">
         {textFormatted}
       </h3>
     )
@@ -41,7 +41,7 @@ const Text = ({ sentence }: { sentence: string }) => {
   return (
     <>
       {sentence.split('/').map((s, i) => (
-        <Paragraph key={i} text={s} />
+        <Line key={i} text={s} />
       ))}
     </>
   )
