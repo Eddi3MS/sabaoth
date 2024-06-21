@@ -54,4 +54,11 @@ export const prayers = [
     prayer:
       'Crux Sacra sit mihi lux/Non Draco sit mihi dux/Vade retro Satana!/Nunquam suade mihi vana./Sunt mala quæ libas/Ipse venena bibas.',
   },
+  {
+    id: 9,
+    name: 'Angelus',
+    slug: 'angelus',
+    prayer:
+      '$Angelus Domini nuntiavit Mariæ/_Et concepit de Spiritu Sancto/_Ave Mariæ...//$Ecce ancilla Domini/_Fiat mihi secundum verbum tuum/_Ave Mariæ...//$Et Verbum caro factum est/_Et habitavit in nobis/_Ave Mariæ...//$Ora pro nobis, sancta Dei Genitrix/_Ut digni efficiamur promissionibus Christi//$Oremus/_Gratiam tuam, quæsumos, Domine, mentibus nostris infunde; ut qui, Angelo nuntiante, Christi Filii tui incarnationem cognovimus, per passionem eius et crucem ad resurrectionis gloriam perducamur. Per eúmdem Christum Dominum nostrum. Amen.',
+  },
 ]

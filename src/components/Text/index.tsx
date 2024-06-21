@@ -28,7 +28,7 @@ const Line = ({ text }: { text: string }) => {
   return (
     <p
       className={cn(
-        ' text-gray-800 text-lg leading-7 select-none',
+        ' text-gray-800 text-lg leading-7 select-none min-h-5',
         hasPadding && 'indent-4'
       )}
     >
