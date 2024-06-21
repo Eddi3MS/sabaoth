@@ -641,15 +641,24 @@ const saints: Saint[] = [
     location: 'Wadowice, Polônia',
     wiki: '/Papa_João_Paulo_II',
   },
+  {
+    id: 81,
+    name: 'São Felipe Néri',
+    decease: 1595,
+    birth: 1515,
+    location: 'Florença, Itália',
+    wiki: 'Filipe_Néri',
+  },
 ]
 
-/* saints.sort((a, b) => {
+saints.sort((a, b) => {
   const aDate = a?.birth ?? a.decease
   const bDate = b?.birth ?? b.decease
 
   return aDate - bDate || a.name.localeCompare(b.name)
 })
 
+/*
 const saintss = saints.map((s, i) => ({ ...s, id: i + 1 }))
 
 console.log(saintss) */
