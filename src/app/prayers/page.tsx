@@ -26,7 +26,7 @@ const Prayers = () => {
       <Accordion type="multiple" className="max-w-sm mx-auto">
         {objEntries(groupedByLang).map(([k, v]) => {
           return (
-            <AccordionItem value={k}>
+            <AccordionItem value={k} key={k}>
               <AccordionTrigger>Orações em {k}</AccordionTrigger>
               <AccordionContent>
                 <ul className="flex flex-col items-start justify-center gap-2">
