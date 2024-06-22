@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# APP Católico
 
-## Getting Started
+- Orações
+  - Patter Noster
+  - Credo
+  - Ave Maria
+  - Gloria
+  - O mi Iesu
+  - Salve Regina
+  - Deus meus
+  - Crux Sacra
+  - Angelus
+- Novenas
+  - Novena do Sagrado Coração de Jesus (22 a 30 de maio)
+- Timeline dos Santos
+  - Santo Hipólito
+  - São Cristóvão
+  - São Lourenço de Huesca
+  - Santa Águeda
+  - Santo Alexandre de Alexandria
+  - Santo Antão
+  - São Sebastião
+  - São Jorge
+  - Santa Bárbara
+  - Santa Doroteia
+  - Santa Eulália de Mérida
+  - Santo Atanásio
+  - Santo Hilário de Poitiers
+  - São Dâmaso I
+  - São Cirilo de Jerusalém
+  - São Basílio Magno
+  - São Gregório de Nissa
+  - Santo Ambrósio
+  - São Jerônimo
+  - Santo Agostinho
+  - Santa Úrsula
+  - Santa Brígida da Irlanda
+  - São Bento
+  - São Gregório Magno
+  - São Egídio
+  - Santa Adelaide
+  - Santo Henrique
+  - Santo Eduardo, o Confessor
+  - São Bruno de Colônia
+  - Santa Margarida da Escócia
+  - São Bernardo de Claraval
+  - São Simão Stock
+  - São Domingos de Gusmão
+  - São Francisco de Assis
+  - Santa Juliana
+  - Santa Clara de Assis
+  - Santo Antônio de Pádua
+  - Santa Isabel da Hungria
+  - São Boaventura
+  - Santo Tomás de Aquino
+  - Santa Gertrudes de Helfta
+  - Santa Brígida da Suécia
+  - Santa Catarina de Siena
+  - Santa Rita
+  - Santo Antonino de Florença
+  - São Diogo de Alcalá
+  - Santa Joana D'arc
+  - São Francisco de Paula
+  - Santa Beatriz da Silva
+  - Santa Angela de Merici
+  - São Juan Diego
+  - São Tomás More
+  - São Francisco Xavier
+  - Santa Tereza D'Ávila
+  - São Felipe Néri
+  - São José de Anchieta
+  - São João da Cruz
+  - São Francisco de Sales
+  - São Martinho de Porres
+  - São Vicente de Paulo
+  - Santa Rosa de Lima
+  - Santa Margarida Maria Alacoque
+  - São Luís Maria de Montfort
+  - Santo Afonso Maria de Ligório
+  - São Geraldo Magela
+  - Santa Catarina Labouré
+  - Santo Antônio Maria Claret
+  - Santo Arnaldo Janssen
+  - São Domingos Sávio
+  - Santa Bernadete
+  - Santa Josephine Bakhita
+  - Santa Teresa de Lisieux
+  - Santa Gemma Galgani
+  - São Padre Pio
+  - Santa Maria Goretti
+  - São Maximiliano Kolbe
+  - São Josemaría Escrivá
+  - Santa Faustina
+  - Santa Teresa de Calcutá
+  - Santa Dulce dos Pobres
+  - São João Paulo II
+- Rosários
+  - Rosario em Latim
+  - Rosário em Português
+  - Rosário - São Luís Maria Grignon de Montfort
+  - Rosário das Lágrimas
+- Teste Temperamentos
+  - Melancólico
+  - Fleumático
+  - Sanguineo
+  - Colérico
+ 
 
-First, run the development server:
+  # Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Next.js
+  - TailwindCSS
+  - Shadcn-UI
