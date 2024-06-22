@@ -9,6 +9,10 @@ const Line = ({ text }: { text: string }) => {
   const textFormatted =
     isTitle || hasPadding || isSubtitle ? text.replace(text[0], '') : text
 
+  if (text === '') {
+    return <br />
+  }
+
   if (isTitle) {
     return (
       <h3 className=" text-gray-800 leading-7 select-none indent-4 font-bold text-2xl mt-4 text-center">
@@ -28,7 +32,7 @@ const Line = ({ text }: { text: string }) => {
   return (
     <p
       className={cn(
-        ' text-gray-800 text-lg leading-7 select-none min-h-5',
+        ' text-gray-800 text-lg leading-7 select-none',
         hasPadding && 'indent-4'
       )}
     >
