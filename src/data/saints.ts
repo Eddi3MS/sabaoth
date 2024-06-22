@@ -1,4 +1,4 @@
-import { Saint } from '@/app/timeline/types'
+import { Saint } from './types'
 
 const saints: Saint[] = [
   {

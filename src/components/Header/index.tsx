@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils'
 import { MenuIcon } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-import { HTMLAttributes, useEffect, useState } from 'react'
+import { HTMLAttributes, useEffect, useMemo, useState } from 'react'
 import Link from '../Link'
 import { Button } from '../ui/button'
 
@@ -49,7 +49,7 @@ const Header = () => {
             : 'hidden'
         )}
       />
-      <header className="shadow-md px-4 sticky left-0 right-0 top-0 bg-background z-20">
+      <header className="shadow-md px-4 sticky left-0 right-0 top-0 bg-background z-20 ">
         <Button
           variant="ghost"
           size="icon"
@@ -58,7 +58,9 @@ const Header = () => {
         >
           <MenuIcon />
         </Button>
-        <Nav className="hidden lg:flex w-[min(98%,1170px)] mx-auto" />
+        <div className="w-[calc(100vw-20px)]">
+          <Nav className="hidden lg:flex w-[min(98%,1170px)] mx-auto" />
+        </div>
       </header>
     </>
   )

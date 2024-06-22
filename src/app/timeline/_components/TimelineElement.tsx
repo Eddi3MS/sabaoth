@@ -1,5 +1,5 @@
 import { Church, ExternalLink } from 'lucide-react'
-import { Saint } from '../types'
+import { Saint } from '@/data/types'
 
 type TimelineElement = Omit<Saint, 'id'> & {
   side: 'left' | 'right'

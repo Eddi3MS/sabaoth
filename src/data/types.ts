@@ -7,3 +7,11 @@ export type Saint = {
   description?: string
   wiki: string
 }
+
+export type Prayer = {
+  id: number
+  name: string
+  slug: string
+  prayer: string
+  lang: string
+}
