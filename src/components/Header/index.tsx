@@ -58,7 +58,7 @@ const Header = () => {
         >
           <MenuIcon />
         </Button>
-        <div className="w-[calc(100vw-20px)]">
+        <div className="w-[calc(100vw-30px)]">
           <Nav className="hidden lg:flex w-[min(98%,1170px)] mx-auto" />
         </div>
       </header>
