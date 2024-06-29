@@ -101,7 +101,7 @@ export const prayers: Prayer[] = [
     name: 'Angelus',
     slug: 'angelus',
     prayer:
-      '$Angelus Domini nuntiavit Mariae/_Et concepit de Spiritu Sancto//_Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Ecce ancilla Domini/_Fiat mihi secundum verbum tuum//Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Et Verbum caro factum est/_Et habitavit in nobis//Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Ora pro nobis, sancta Dei Genitrix/_Ut digni efficiamur promissionibus Christi//$Oremus/_Gratiam tuam, quaesumos, Domine, mentibus nostris infunde; ut qui, Angelo nuntiante, Christi Filii tui incarnationem cognovimus, per passionem eius et crucem ad resurrectionis gloriam perducamur. Per eúmdem Christum Dominum nostrum. Amen.',
+      '$Angelus Domini nuntiavit Mariae/_Et concepit de Spiritu Sancto//Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Ecce ancilla Domini/_Fiat mihi secundum verbum tuum//Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Et Verbum caro factum est/_Et habitavit in nobis//Ave Maria, gratia plena,/Dominus tecum./Benedícta tu in muliéribus,/et benedíctus fructus ventris tui, Iesus./Sancta Maria, Mater Dei,/ora pro nobis peccatóribus,/nunc, et in hora mortis nostrae./Amen.//$Ora pro nobis, sancta Dei Genitrix/_Ut digni efficiamur promissionibus Christi//$Oremus/Gratiam tuam, quaesumos, Domine, mentibus nostris infunde; ut qui, Angelo nuntiante, Christi Filii tui incarnationem cognovimus, per passionem eius et crucem ad resurrectionis gloriam perducamur. Per eúmdem Christum Dominum nostrum. Amen.',
     lang: 'Latim',
   },
   {
@@ -118,6 +118,22 @@ export const prayers: Prayer[] = [
     slug: 'salve-rainha',
     prayer:
       'Salve, Rainha,/Mãe de Misericórdia,/vida, doçura/e esperança nossa, Salve./A Vós bradamos,/os degredados filhos de Eva./A Vós suspiramos,/gemendo e chorando/neste vale de lágrimas./Eia, pois, Advogada nossa,/esses Vossos olhos misericordiosos a nós volvei;/e depois deste desterro nos mostrai Jesus,/bendito Fruto do Vosso ventre./Ó clemente, ó piedosa, ó doce sempre Virgem Maria./Rogai por nós, Santa Mãe de Deus,/Para que sejamos dignos das promessas de Cristo./Amém',
+    lang: 'Português',
+  },
+  {
+    id: 16,
+    name: 'Oração de Sto Tomás de Aquino para antes da Missa ',
+    slug: 'oracao-para-antes-da-missa',
+    prayer:
+      'Deus eterno e todo-poderoso, eis que me aproximo do sacramento do vosso Filho único, nosso Senhor Jesus Cristo. Impuro, venho à fonte da misericórdia; cego, à luz da eterna claridade; pobre e indigente, ao Senhor do céu e da terra. Imploro, pois, a abundância da vossa liberalidade, para que vos digneis curar a minha fraqueza, lavar as minhas manchas, iluminar a minha cegueira, enriquecer a minha pobreza, vestir a minha nudez. Que eu receba o Pão dos Anjos, o Rei dos reis e o Senhor dos senhores, com o respeito e a humildade, a contrição e a devoção, a pureza e a fé, o propósito e a intenção que convêm à salvação da minha alma.//Dai-me que receba não só o sacramento do Corpo e do Sangue do Senhor, mas também o seu efeito e a sua força. Ó Deus de mansidão, fazei-me acolher com tais disposições o Corpo que vosso Filho único, Nosso Senhor Jesus Cristo, recebeu da Virgem Maria, que seja incorporado ao seu Corpo Místico e contato entre os seus membros. Ó Pai cheio de amor, fazei que, recebendo agora o vosso Filho sob o véu do sacramento, possa na eternidade contemplá-lo face a face. Vós, que viveis e reinais na unidade do Espírito Santo, por todos os séculos dos séculos. Amém.',
+    lang: 'Português',
+  },
+  {
+    id: 17,
+    name: 'Oração de Sto Tomás de Aquino para antes dos estudos',
+    slug: 'oracao-para-antes-dos-estudos',
+    prayer:
+      'Infalível Criador, que, dos tesouros da Vossa sabedoria, tirastes as hierarquias dos anjos, colocando-as com ordem admirável no céu;/Vós, que distribuístes o universo com encantadora harmonia;/Vós, que sois a verdadeira fonte da luz e o princípio supremo da sabedoria,difundi sobre as trevas da minha mente o raio do esplendor, removendo as duplas trevas nas quais nasci: o pecado e a ignorância./Vós, que tornastes fecunda a língua das crianças, tornai erudita a minha língua e espalhai sobre os meus lábios a vossa bênção./Concedei-me a agudeza de entender, a capacidade de reter, a sutileza de relevar, a facilidade de aprender, a graça abundante de falar e de escrever./Ensinai-me a começar, regei-me no continuar e no perseverar até o término. Vós, que sois verdadeiro Deus e verdadeiro homem, que viveis e reinais pelos séculos dos séculos. Amém!',
     lang: 'Português',
   },
 ]
