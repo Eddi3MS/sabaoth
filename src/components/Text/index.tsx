@@ -1,21 +1,44 @@
 import { cn } from '@/lib/utils'
+import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
 const Line = ({ text }: { text: string }) => {
   const isTitle = text.startsWith('#')
   const isSubtitle = text.startsWith('$')
   const hasPadding = text.startsWith('_')
+  const isLink = text.startsWith('%')
+  const isSeparator = text.startsWith('&')
 
   const textFormatted =
-    isTitle || hasPadding || isSubtitle ? text.replace(text[0], '') : text
+    isTitle || hasPadding || isSubtitle || isLink
+      ? text.replace(text[0], '')
+      : text
 
   if (text === '') {
     return <br />
   }
 
+  if (isSeparator) {
+    return <hr />
+  }
+
+  if (isLink) {
+    const [href, title] = textFormatted.split('*')
+
+    return (
+      <a
+        href={`https://${href.replaceAll(' ', '/')}`}
+        target="_blank"
+        className="text-blue-500 font-bold text-sm flex items-center gap-1 hover:underline"
+      >
+        {title}{' '}
+      </a>
+    )
+  }
+
   if (isTitle) {
     return (
-      <h3 className=" text-gray-800 leading-7 select-none indent-4 font-bold text-2xl mt-4 text-center">
+      <h3 className=" text-gray-800 leading-7 font-bold text-2xl mt-4 text-center">
         {textFormatted}
       </h3>
     )
@@ -23,7 +46,7 @@ const Line = ({ text }: { text: string }) => {
 
   if (isSubtitle) {
     return (
-      <h4 className="text-gray-800 text-lg leading-7 select-none indent-4 font-bold">
+      <h4 className="text-gray-800 text-lg leading-7 md:indent-4 font-bold">
         {textFormatted}
       </h4>
     )
@@ -32,8 +55,8 @@ const Line = ({ text }: { text: string }) => {
   return (
     <p
       className={cn(
-        ' text-gray-800 text-lg leading-7 select-none',
-        hasPadding && 'indent-4'
+        ' text-gray-800 text-lg leading-7',
+        hasPadding && 'md:indent-4'
       )}
     >
       {isTitle || hasPadding || isSubtitle ? text.replace(text[0], '') : text}

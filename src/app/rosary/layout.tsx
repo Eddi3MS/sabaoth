@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import { usePathname, useRouter } from 'next/navigation'
-import React, { PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 
 const Layout = ({ children }: PropsWithChildren) => {
   const router = useRouter()

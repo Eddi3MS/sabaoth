@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Catholic App',
-  description: 'Aggregated information about the catholic faith',
+  description: 'Orações, Santos da Igreja Católica, Temperamentos e mais..',
 }
 
 export default function RootLayout({
@@ -17,14 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
         className={`${inter.className} flex flex-col min-h-screen overflow-x-hidden`}
       >
         <Header />
         <main className="flex-1 flex flex-col">{children}</main>
         <footer className="text-center p-4 font-semibold">
-          ©Timeline {new Date().getFullYear()}. Alguns direitos reservados
+          ©Sabaoth {new Date().getFullYear()}. Alguns direitos reservados
         </footer>
       </body>
     </html>

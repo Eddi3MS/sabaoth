@@ -1,5 +1,11 @@
 import { rosary } from '@/data/rosary'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Rosários',
+  description: 'Rosários católicos',
+}
 
 const Prayers = () => {
   return (

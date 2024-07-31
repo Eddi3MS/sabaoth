@@ -61,9 +61,11 @@ export const rosary = [
   {
     id: 4,
     slug: 'rosary-of-our-lady-of-tears',
-    title: 'Rosário das Lágrimas',
+    title: 'Coroa das Lágrimas',
     initial: `#Oração Inicial/Eis-nos aqui aos Vossos pés, ó dulcíssimo Jesus Crucificado, para Vos oferecermos as lágrimas d’Aquela que, com tanto amor, Vos acompanhou no caminho doloroso do Calvário. Fazei, ó bom Mestre, que nós saibamos aproveitar da lição que elas nos dão, para que, na Terra, realizando a Vossa Santíssima Vontade, possamos um dia, no Céu, Vos louvar por toda a eternidade./`,
-    final: `#Repetir 3 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./#Oração Final/Virgem Santíssima e Mãe das Dores, nós Vos pedimos que junteis os Vossos rogos aos nossos, a fim de que Jesus, Vosso Divino Filho, a quem nos dirigimos em nome das Vossas lágrimas de Mãe, ouça as nossas preces e nos conceda, com as graças que desejamos, a coroa da vida eterna. Amém./#Jaculatórias finais/Por Vossa mansidão divina, ó Jesus Manietado, salvai o Brasil do inimigo ameaçador!/Ó Virgem Dolorosíssima, as Vossas Lágrimas derrubaram o império infernal!`,
+    final: `#Repetir 3 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./#Oração Final/Virgem Santíssima e Mãe das Dores, nós Vos pedimos que junteis os Vossos rogos aos nossos, a fim de que Jesus, Vosso Divino Filho, a quem nos dirigimos em nome das Vossas lágrimas de Mãe, ouça as nossas preces e nos conceda, com as graças que desejamos, a coroa da vida eterna. Amém./#Jaculatórias finais/Por Vossa mansidão divina, ó Jesus Manietado, salvai o Brasil do inimigo ameaçador!/Ó Virgem Dolorosíssima, as Vossas Lágrimas derrubaram o império infernal!
+    //&//$Promessas/Jesus disse: “Os que me pedirem pelas lágrimas de minha mãe, eu amorosamente os atenderei"
+    ///$Links úteis:/%youtu.be iZOHoERKdlI?si=k4VUzXh6tBAladhf*A Profecia de Nossa Senhora das Lágrimas para o Brasil`,
     mysteries: {
       joyful: `#Repetir 7 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./7x -> Meu Jesus, ouvi os nossos rogos, pelas Lágrimas de Vossa Mãe Santíssima./Irmã Amália, rogai por nós./Madre Vilac, rogai por nós.`,
     },

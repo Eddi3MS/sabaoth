@@ -2,6 +2,18 @@ import Text from '@/components/Text'
 import { prayers } from '@/data/prayers'
 import React from 'react'
 
+export async function generateMetadata({
+  params: { slug },
+}: {
+  params: { slug: string }
+}) {
+  const current = prayers.find((o) => o.slug === slug) || prayers[0]
+  return {
+    title: current.name,
+    description: `${current.name} em ${current.lang}`,
+  }
+}
+
 const Prayer = ({ params: { slug } }: { params: { slug: string } }) => {
   const current = prayers.find((o) => o.slug === slug) || prayers[0]
   return (
