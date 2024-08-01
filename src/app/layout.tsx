@@ -22,7 +22,9 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col min-h-screen overflow-x-hidden`}
       >
         <Header />
-        <main className="flex-1 flex flex-col">{children}</main>
+        <main className="flex-1 flex flex-col w-[min(96%,840px)] mx-auto px-2 md:px-0">
+          {children}
+        </main>
         <footer className="text-center p-4 font-semibold">
           ©Sabaoth {new Date().getFullYear()}. Alguns direitos reservados
         </footer>

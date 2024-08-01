@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 const Prayers = () => {
   return (
-    <ul className="flex flex-col items-center justify-center gap-2">
+    <ul className="flex flex-col justify-center gap-2">
       {rosary.map((o) => (
         <li
           key={o.id}
-          className="underline underline-offset-4 text-center hover:text-blue-600"
+          className="underline underline-offset-4 text-left hover:text-blue-600"
         >
           <Link href={`/rosary/${o.slug}`}>
             {o.title} <br className="md:hidden" />

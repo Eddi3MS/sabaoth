@@ -30,9 +30,9 @@ export default function Home() {
   const { checkedList, setCheckedList, result } = useChecklist()
 
   return (
-    <section className="flex min-h-screen flex-col px-4 pb-8 gap-4 max-w-screen-2xl mx-auto">
+    <section className="flex min-h-screen flex-col pb-8 gap-4 mx-auto">
       <h1 className="text-4xl text-center mt-8"> Indicador de Temperamento</h1>
-      <div className="flex flex-col gap-2 max-w-screen-lg">
+      <div className="flex flex-col gap-2">
         <ul className="list-disc pl-5">
           <li className="text-sm lg:text-base font-semibold text-secondary-foreground">
             Marque as caixas abaixo que descrevem suas tendências habituais, os

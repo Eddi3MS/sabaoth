@@ -15,7 +15,7 @@ const Layout = ({ children }: PropsWithChildren) => {
   }
 
   return (
-    <div className="flex flex-col w-[min(94%,1170px)] mx-auto gap-8 py-8">
+    <div className="flex flex-col w-full mx-auto gap-8 py-8">
       <div className="flex justify-center relative">
         {!isRoot ? (
           <Button

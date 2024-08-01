@@ -10,7 +10,7 @@ import { Button } from '../ui/button'
 const Nav = ({ className }: HTMLAttributes<HTMLDivElement>) => {
   return (
     <nav className={cn('py-4 gap-8 items-center flex', className)}>
-      <Link href="/">Home</Link>
+      <Link href="/">Inicio</Link>
       <Link href="/timeline">Santos</Link>
       <Link href="/temperamentos">Temperamentos</Link>
       <Link href="/prayers">Orações</Link>
@@ -59,7 +59,7 @@ const Header = () => {
           <MenuIcon />
         </Button>
         <div className="w-[calc(100vw-30px)]">
-          <Nav className="hidden lg:flex w-[min(98%,1170px)] mx-auto" />
+          <Nav className="hidden lg:flex w-[min(96%,840px)] mx-auto" />
         </div>
       </header>
     </>

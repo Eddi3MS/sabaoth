@@ -21,15 +21,15 @@ const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
   const currentDay = current.mysteries[mystery]
 
   return (
-    <div className="flex flex-col px-2 w-full">
+    <div className="flex flex-col w-full">
       <h2 className="text-3xl font-bold text-center text-gray-800">
         {current.title}
       </h2>
-      <div className="w-full flex flex-col gap-2 max-w-prose mx-auto">
+      <div className="w-full flex flex-col gap-2">
         <Text sentence={current.initial} />
 
         {options.length > 1 ? (
-          <div className="flex gap-4 items-center justify-center text-2xl font-bold my-4 text-white bg-blue-600 p-4">
+          <div className="flex gap-4 items-center justify-center text-2xl font-bold my-4 text-white bg-blue-600 p-4 -mx-3 md:mx-0">
             {current.mysteryTitle}:{' '}
             <Select
               onValueChange={(strValue: keyof typeof current.mysteries) =>

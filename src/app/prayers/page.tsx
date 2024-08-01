@@ -23,7 +23,7 @@ const Prayers = () => {
 
   return (
     <div>
-      <Accordion type="multiple" className="max-w-sm mx-auto">
+      <Accordion type="multiple" className="">
         {objEntries(groupedByLang).map(([k, v]) => {
           return (
             <AccordionItem value={k} key={k}>

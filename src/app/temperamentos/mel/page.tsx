@@ -11,7 +11,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <Card className="max-w-[min(90%,1280px)] my-8 mx-auto">
+    <Card className="my-8">
       <CardHeader>
         <CardTitle>Melancólico</CardTitle>
       </CardHeader>
