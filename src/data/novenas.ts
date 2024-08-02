@@ -1,7 +1,7 @@
 export const novenas = [
   {
     id: 1,
-    slug: 'sacred-heart-of-jesus',
+    slug: 'sagrado-coracao',
     title: 'Novena do Sagrado Coração de Jesus',
     period: '22 a 30 de maio',
     initial: `#Orações preparatórias/$Ato de contrição/

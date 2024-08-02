@@ -1,7 +1,13 @@
 import { novenas } from '@/data/novenas'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
-const Prayers = () => {
+export const metadata: Metadata = {
+  title: 'Novenas',
+  description: 'Novenas católicos',
+}
+
+const Novenas = () => {
   return (
     <ul className="flex flex-col justify-center gap-2">
       {novenas.map((o) => (
@@ -18,4 +24,4 @@ const Prayers = () => {
   )
 }
 
-export default Prayers
+export default Novenas

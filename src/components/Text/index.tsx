@@ -13,7 +13,7 @@ const Line = ({ text }: { text: string }) => {
       : text
 
   if (text === '') {
-    return <br />
+    return <span className="block h-5" aria-hidden />
   }
 
   if (isSeparator) {
