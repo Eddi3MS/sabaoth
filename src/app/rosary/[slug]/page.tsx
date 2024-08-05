@@ -25,7 +25,7 @@ const Rosary = ({ params: { slug } }: { params: { slug: string } }) => {
       <h2 className="text-3xl font-bold text-center text-gray-800">
         {current.title}
       </h2>
-      <div className="w-full flex flex-col gap-2">
+      <div className="w-full flex flex-col">
         <Text sentence={current.initial} />
 
         {options.length > 1 ? (

@@ -1,3 +1,8 @@
+const vede =
+  'Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu.'
+const ouvi =
+  '7x -> Meu Jesus, ouvi os nossos rogos, pelas Lágrimas de Vossa Mãe Santíssima.'
+
 export const rosary = [
   {
     id: 1,
@@ -68,11 +73,26 @@ export const rosary = [
     slug: 'rosary-of-our-lady-of-tears',
     title: 'Coroa das Lágrimas',
     initial: `#Oração Inicial/Eis-nos aqui aos Vossos pés, ó dulcíssimo Jesus Crucificado, para Vos oferecermos as lágrimas d’Aquela que, com tanto amor, Vos acompanhou no caminho doloroso do Calvário. Fazei, ó bom Mestre, que nós saibamos aproveitar da lição que elas nos dão, para que, na Terra, realizando a Vossa Santíssima Vontade, possamos um dia, no Céu, Vos louvar por toda a eternidade./`,
-    final: `#Repetir 3 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./#Oração Final/Virgem Santíssima e Mãe das Dores, nós Vos pedimos que junteis os Vossos rogos aos nossos, a fim de que Jesus, Vosso Divino Filho, a quem nos dirigimos em nome das Vossas lágrimas de Mãe, ouça as nossas preces e nos conceda, com as graças que desejamos, a coroa da vida eterna. Amém./#Jaculatórias finais/Por Vossa mansidão divina, ó Jesus Manietado, salvai o Brasil do inimigo ameaçador!/Ó Virgem Dolorosíssima, as Vossas Lágrimas derrubaram o império infernal!
-    //&//$Promessas/Jesus disse: “Os que me pedirem pelas lágrimas de minha mãe, eu amorosamente os atenderei"
-    ///$Links úteis:/%youtu.be iZOHoERKdlI?si=k4VUzXh6tBAladhf*A Profecia de Nossa Senhora das Lágrimas para o Brasil`,
+    final: `/${vede}//&//${vede}//&//${vede}
+    //#Oração Final/Virgem Santíssima e Mãe das Dores, nós Vos pedimos que junteis os Vossos rogos aos nossos, a fim de que Jesus, Vosso Divino Filho, a quem nos dirigimos em nome das Vossas lágrimas de Mãe, ouça as nossas preces e nos conceda, com as graças que desejamos, a coroa da vida eterna. Amém.
+    //#Jaculatórias finais/Por Vossa mansidão divina, ó Jesus Manietado, salvai o Brasil do inimigo ameaçador!/Ó Virgem Dolorosíssima, as Vossas Lágrimas derrubaram o império infernal!
+    //&//&/$Promessas/Jesus disse: “Os que me pedirem pelas lágrimas de minha mãe, eu amorosamente os atenderei"
+    //$Links úteis:/%youtu.be iZOHoERKdlI?si=k4VUzXh6tBAladhf*A Profecia de Nossa Senhora das Lágrimas para o Brasil`,
     mysteries: {
-      joyful: `#Repetir 7 vezes:/Vêde, ó Jesus, que são as lágrimas d’Aquela que mais Vos amou na Terra, e que mais Vos ama no Céu./7x -> Meu Jesus, ouvi os nossos rogos, pelas Lágrimas de Vossa Mãe Santíssima./Irmã Amália, rogai por nós./Madre Vilac, rogai por nós.`,
+      joyful: `$1. A espada a transpassar a alma, conforme a profecia do velho Simeão no templo/!"Simeão os abençoou e disse a Maria, sua mãe: Eis que este menino está destinado a ser ocasião de queda e elevação de muitos em Israel e sinal de contradição. Quanto a ti, uma espada te transpassará a alma." (Lc 2, 34-35)/
+      ${vede}/${ouvi}///&//
+      /$2. A fuga da SAgrada Família para o Egito/!"O anjo do Senhor apareceu em sonho a José e disse: Levanta, toma o menino e a mãe, foge para o Egito e fica lá até que te avise. Pois Herodes vai procurar o menino para matá-lo. Levantando-se, José tomou o menino e a mãe, e partiu para o Egito." (Mt 2, 13-14)/
+      ${vede}/${ouvi}///&//
+      /$3. Nossa Senhora perde seu divino filho por três dias/!"Acabados os dias da festa da Páscoa, quando voltaram, o menino Jesus ficou em Jerusalém, sem que os pais o percebessem. Pensando que estivesse na caravana, andaram o caminho de um dia e o procuraram entre parentes e conhecidos. E, não o achando, voltaram a Jerusalém à procura dele." (LC 2, 43b-45)/
+      ${vede}/${ouvi}///&//
+      /$4. O encontro com Nosso Senhor todo flagelado e carregando uma pesadíssima Cruz às costas/!"Ao conduzir Jesus, lançaram mão de um certo Simão de Círene, que vinha do campo, e o encarregaram de levar a cruz atrás de Jesus. Seguia-o grande multidão de povo e de mulheres qye batiam no peito e o lamentavam." (Lc 23,26-27)/
+      ${vede}/${ouvi}///&//
+      /$5. A bárbara crucificação e morte de seu divino filho/!"Junto à cruz de Jesus estavam de pé sua Mãe, a irmã de sua Mãe, Maria de Cléofas, e Maria Madalena. Vendo a Mãe e, perto dela, o discípulo a quem amava, disse Jesus para a mãe: 'Mulher, eis aí o teu filho!' Depois disse para o discípulo: 'Eis aí a tua Mãe!'" (Jo 19, 15-27a)/
+      ${vede}/${ouvi}///&//
+      /$6. Nossa Senhora recebe em seus braços seu filho morto chagado e transpassado pela lança/!"Chegada a tarde, porque era o dia da Preparação, isto é, a véspera de sábado, veio José de Arimateia, entrou decidido na casa de Pilatos e pediu o corpo de Jesus. Pilatos, então, deu o cadáver a José, que retirou o corpo da cruz." (Mc 15,42)/
+      ${vede}/${ouvi}///&//
+      /$7. Nossa Senhora acompanha seu divino filho a sepultura/!"Os discípulos tiraram o corpo de Jesus e onvolveram em faixas de linho com aromas, conforme é o costume de sepultar dos judeus. Havia perto do local, onde fora crucificado, um jardim, e no jardim um sepulcro novo onde ninguém ainda fora depositado. Foi ali que puseram Jesus." (Jo 19, 40-42a)/
+      ${vede}/${ouvi}///&`,
     },
     mysteryText: {
       joyful: 'Gozosos',

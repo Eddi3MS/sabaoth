@@ -6,14 +6,19 @@ const Line = ({ text }: { text: string }) => {
   const hasPadding = text.startsWith('_')
   const isLink = text.startsWith('%')
   const isSeparator = text.startsWith('&')
+  const isItalic = text.startsWith('!')
 
   const textFormatted =
-    isTitle || hasPadding || isSubtitle || isLink
+    isTitle || hasPadding || isSubtitle || isLink || isItalic
       ? text.replace(text[0], '')
       : text
 
+  if (isItalic) {
+    return <span className="italic max-w-sm mx-auto mb-3">{textFormatted}</span>
+  }
+
   if (text === '') {
-    return <span className="block h-5" aria-hidden />
+    return <span className="block h-2 md:h-5" aria-hidden />
   }
 
   if (isSeparator) {
@@ -36,7 +41,7 @@ const Line = ({ text }: { text: string }) => {
 
   if (isTitle) {
     return (
-      <h3 className=" text-gray-800 leading-7 font-bold text-2xl mt-4 text-center">
+      <h3 className=" text-gray-800 leading-7 font-bold text-2xl mt-4 text-center my-3">
         {textFormatted}
       </h3>
     )
@@ -44,7 +49,7 @@ const Line = ({ text }: { text: string }) => {
 
   if (isSubtitle) {
     return (
-      <h4 className="text-gray-800 text-lg leading-7 md:indent-4 font-bold">
+      <h4 className="text-gray-800 text-lg leading-7 md:indent-4 font-bold my-2">
         {textFormatted}
       </h4>
     )
