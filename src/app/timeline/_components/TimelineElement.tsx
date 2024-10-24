@@ -1,4 +1,4 @@
-import { Church, ExternalLink } from 'lucide-react'
+import { Church } from 'lucide-react'
 import { Saint } from '@/data/types'
 
 type TimelineElement = Omit<Saint, 'id'> & {
@@ -6,7 +6,7 @@ type TimelineElement = Omit<Saint, 'id'> & {
 }
 
 const TimelineElement = (props: TimelineElement) => {
-  const { location, name, birth, decease, description, wiki, side } = props
+  const { location, name, birth, decease, description, side } = props
 
   return (
     <div className="mt-6 sm:mt-0 sm:mb-6">
@@ -30,13 +30,6 @@ const TimelineElement = (props: TimelineElement) => {
               <div>
                 <h3 className="text-lg font-bold flex items-center md:items-center gap-2">
                   <span>{name}</span>
-                  <a
-                    href={`https://pt.wikipedia.org/wiki${wiki}`}
-                    target="_blank"
-                    className="text-blue-400 hover:text-blue-500 relative -top-[2px]"
-                  >
-                    <ExternalLink size={15} />
-                  </a>
                 </h3>
                 <h4 className="text-muted-foreground font-semibold">
                   {location}

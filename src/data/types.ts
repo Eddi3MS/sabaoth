@@ -5,7 +5,6 @@ export type Saint = {
   birth?: number
   decease: number
   description?: string
-  wiki: string
 }
 
 export type Prayer = {

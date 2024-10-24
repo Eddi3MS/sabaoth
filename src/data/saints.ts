@@ -7,7 +7,6 @@ const saints: Saint[] = [
     birth: 170,
     decease: 236,
     location: 'Roma, Itália',
-    wiki: '/Hipólito_de_Roma',
   },
   {
     id: 2,
@@ -15,7 +14,6 @@ const saints: Saint[] = [
     birth: 200,
     decease: 251,
     location: 'Lícia, Turquia',
-    wiki: '/Cristóvão_da_Lícia',
   },
   {
     name: 'São Lourenço de Huesca',
@@ -23,7 +21,6 @@ const saints: Saint[] = [
     decease: 258,
     location: 'Valência, Espanha',
     id: 3,
-    wiki: '/Lourenço_de_Huesca',
   },
   {
     id: 4,
@@ -31,7 +28,6 @@ const saints: Saint[] = [
     birth: 235,
     decease: 251,
     location: 'Catânia, Itália',
-    wiki: '/Águeda_de_Catânia',
   },
   {
     id: 5,
@@ -39,7 +35,6 @@ const saints: Saint[] = [
     birth: 250,
     decease: 326,
     location: 'Alexandria, Egito',
-    wiki: '/Alexandre_de_Alexandria',
   },
   {
     id: 6,
@@ -47,7 +42,6 @@ const saints: Saint[] = [
     birth: 251,
     decease: 356,
     location: 'Heracleópolis Magna, Egito',
-    wiki: '/Antão,_o_Grande',
   },
   {
     id: 7,
@@ -55,7 +49,6 @@ const saints: Saint[] = [
     birth: 256,
     decease: 288,
     location: 'Narbonne, França',
-    wiki: '/Sebastião_de_Narbona',
   },
   {
     id: 8,
@@ -63,7 +56,6 @@ const saints: Saint[] = [
     birth: 270,
     decease: 303,
     location: 'Capadócia, Turquia',
-    wiki: '/São_Jorge',
   },
   {
     id: 9,
@@ -71,7 +63,6 @@ const saints: Saint[] = [
     birth: 280,
     decease: 317,
     location: 'Nicomédia, Turquia',
-    wiki: '/Bárbara_de_Nicomédia',
   },
   {
     id: 10,
@@ -79,7 +70,6 @@ const saints: Saint[] = [
     birth: 290,
     decease: 304,
     location: 'Cesareia, Turquia',
-    wiki: '/Doroteia_de_Cesareia',
   },
   {
     id: 11,
@@ -87,14 +77,12 @@ const saints: Saint[] = [
     birth: 290,
     decease: 304,
     location: 'Mérida, Espanha',
-    wiki: '/Eulália_de_Mérida',
   },
   {
     id: 12,
     name: 'Santo Atanásio',
     birth: 296,
     decease: 373,
-    wiki: '/Atanásio_de_Alexandria',
     location: 'Alexandria, Egito',
   },
   {
@@ -103,7 +91,6 @@ const saints: Saint[] = [
     birth: 300,
     decease: 368,
     location: 'Poitiers, França',
-    wiki: '/Hilário_de_Poitiers',
   },
   {
     id: 14,
@@ -111,7 +98,6 @@ const saints: Saint[] = [
     birth: 305,
     decease: 384,
     location: 'Guimarães, Portugal',
-    wiki: '/Dâmaso_I',
   },
   {
     id: 15,
@@ -119,7 +105,6 @@ const saints: Saint[] = [
     birth: 313,
     decease: 386,
     location: 'Jerusalém, Israel',
-    wiki: '/Cirilo_de_Jerusalém',
   },
   {
     id: 16,
@@ -127,29 +112,25 @@ const saints: Saint[] = [
     birth: 329,
     decease: 379,
     location: 'Cesareia, Turquia',
-    wiki: '/Basílio_de_Cesareia',
   },
   {
     id: 17,
-    name: 'São Gregório de Nissa',
-    birth: 335,
-    decease: 394,
+    name: 'São Gregório Nazianzo',
+    birth: 329,
+    decease: 390,
     location: 'Césaréia, Turquia',
-    wiki: '/Gregório_de_Nissa',
   },
   {
     name: 'Santo Ambrósio',
     birth: 340,
     decease: 397,
     location: 'Milão, Itália',
-    wiki: '/Ambrósio_de_Mediolano',
     id: 18,
   },
   {
     name: 'São Jerônimo',
     birth: 347,
     decease: 420,
-    wiki: '/Jerônimo',
     location: 'Estridão, Dalmácia',
     id: 19,
   },
@@ -159,14 +140,12 @@ const saints: Saint[] = [
     location: 'Hipona, Argélia',
     birth: 354,
     decease: 430,
-    wiki: '/Agostinho_de_Hipona',
   },
   {
     birth: 362,
     decease: 383,
     name: 'Santa Úrsula',
-    wiki: '/Úrsula_de_Colônia',
-    location: '\tColônia, Inglaterra',
+    location: 'Colônia, Inglaterra',
     id: 21,
   },
   {
@@ -175,7 +154,6 @@ const saints: Saint[] = [
     birth: 453,
     decease: 524,
     location: 'Louth, Irlanda',
-    wiki: '/Brígida_da_Irlanda',
   },
   {
     id: 23,
@@ -183,7 +161,6 @@ const saints: Saint[] = [
     location: 'Núrsia, Itália',
     birth: 480,
     decease: 547,
-    wiki: '/Bento_de_Núrsia',
   },
   {
     id: 24,
@@ -191,7 +168,6 @@ const saints: Saint[] = [
     birth: 540,
     decease: 604,
     location: 'Roma, Itália',
-    wiki: '/Papa_Gregório_I',
   },
   {
     id: 25,
@@ -199,7 +175,6 @@ const saints: Saint[] = [
     birth: 650,
     decease: 720,
     location: 'Atenas, Grécia',
-    wiki: '/Egídio,_o_eremita',
   },
   {
     id: 26,
@@ -207,7 +182,6 @@ const saints: Saint[] = [
     birth: 931,
     decease: 999,
     location: 'Burgundy, França',
-    wiki: '/Adelaide_da_Itália',
   },
   {
     id: 27,
@@ -215,7 +189,6 @@ const saints: Saint[] = [
     birth: 973,
     decease: 1024,
     location: 'Baviera, Sacro Império Romano',
-    wiki: '/Henrique_II_do_Sacro_Império_Romano-Germânico',
   },
   {
     id: 28,
@@ -223,7 +196,6 @@ const saints: Saint[] = [
     birth: 1003,
     decease: 1066,
     location: 'Islip, Inglaterra',
-    wiki: '/Eduardo,_o_Confessor',
   },
   {
     id: 29,
@@ -231,7 +203,6 @@ const saints: Saint[] = [
     birth: 1030,
     decease: 1101,
     location: 'Colônia, Alemanha',
-    wiki: '/Bruno_de_Colônia',
   },
   {
     id: 30,
@@ -239,7 +210,6 @@ const saints: Saint[] = [
     birth: 1045,
     decease: 1093,
     location: 'Hungria',
-    wiki: '/Margaret_da_Escócia',
   },
   {
     id: 31,
@@ -247,14 +217,12 @@ const saints: Saint[] = [
     birth: 1090,
     decease: 1153,
     location: 'Dijon, França',
-    wiki: '/Bernardo_de_Claraval',
   },
   {
     id: 32,
     name: 'São Simão Stock',
     birth: 1165,
     decease: 1265,
-    wiki: '/Simão_Stock',
     location: 'Aylesford, Reino Unido',
   },
   {
@@ -263,7 +231,6 @@ const saints: Saint[] = [
     birth: 1170,
     decease: 1221,
     location: 'Caleruega, Espanha',
-    wiki: '/Domingos_de_Gusmão',
   },
   {
     id: 34,
@@ -271,7 +238,6 @@ const saints: Saint[] = [
     location: 'Assis, Itália',
     birth: 1181,
     decease: 1226,
-    wiki: '/Francisco_de_Assis',
   },
   {
     id: 35,
@@ -279,7 +245,6 @@ const saints: Saint[] = [
     birth: 1193,
     decease: 1258,
     location: 'Liège, Bélgica',
-    wiki: '/Juliana_de_Mont_Cornillon',
   },
   {
     id: 36,
@@ -287,7 +252,6 @@ const saints: Saint[] = [
     birth: 1194,
     decease: 1253,
     location: 'Assis, Itália',
-    wiki: '/Clara_de_Assis',
   },
   {
     id: 37,
@@ -295,7 +259,6 @@ const saints: Saint[] = [
     location: 'Pádua, Itália',
     birth: 1195,
     decease: 1231,
-    wiki: '/Santo_António_de_Lisboa',
   },
   {
     id: 38,
@@ -303,7 +266,6 @@ const saints: Saint[] = [
     birth: 1207,
     decease: 1231,
     location: 'Pressburgo, Eslováquia',
-    wiki: '/Isabel_da_Hungria',
   },
   {
     id: 39,
@@ -311,7 +273,6 @@ const saints: Saint[] = [
     location: 'Civita di Bagnoregio, Itália',
     birth: 1221,
     decease: 1274,
-    wiki: '/Boaventura',
   },
   {
     id: 40,
@@ -319,7 +280,6 @@ const saints: Saint[] = [
     location: 'Roccasecca, Itália',
     birth: 1225,
     decease: 1274,
-    wiki: '/Tomás_de_Aquino',
   },
   {
     id: 41,
@@ -327,7 +287,6 @@ const saints: Saint[] = [
     birth: 1256,
     decease: 1302,
     location: 'Eisleben, Alemanha',
-    wiki: '/Gertrudes_de_Helfta',
   },
   {
     id: 42,
@@ -335,7 +294,6 @@ const saints: Saint[] = [
     birth: 1303,
     decease: 1373,
     location: 'Uppland, Suécia',
-    wiki: '/Brígida_Birgersdotter_da_Suécia',
   },
   {
     id: 43,
@@ -343,7 +301,6 @@ const saints: Saint[] = [
     birth: 1347,
     decease: 1380,
     location: 'Siena, Itália',
-    wiki: '/Catarina_de_Siena',
   },
   {
     name: 'Santa Rita',
@@ -351,7 +308,6 @@ const saints: Saint[] = [
     decease: 1457,
     id: 44,
     location: 'Cássia, Itália',
-    wiki: '/Rita_de_Cássia',
   },
   {
     id: 45,
@@ -359,7 +315,6 @@ const saints: Saint[] = [
     birth: 1389,
     decease: 1459,
     location: 'Florença, Itália',
-    wiki: '/Antonino_Pierozzi',
   },
   {
     id: 46,
@@ -367,7 +322,6 @@ const saints: Saint[] = [
     birth: 1400,
     decease: 1463,
     location: 'San Nicolás del Puerto, Espanha',
-    wiki: '/Diogo_de_Alcalá',
   },
   {
     id: 47,
@@ -375,7 +329,6 @@ const saints: Saint[] = [
     location: 'Domrémy, França',
     birth: 1412,
     decease: 1431,
-    wiki: "/Joana_D'arc",
   },
   {
     id: 48,
@@ -383,7 +336,6 @@ const saints: Saint[] = [
     birth: 1416,
     decease: 1507,
     location: 'Paula, Itália',
-    wiki: '/Francisco_de_Paola',
   },
   {
     id: 49,
@@ -391,7 +343,6 @@ const saints: Saint[] = [
     birth: 1426,
     decease: 1492,
     location: 'Ceuta, Marrocos',
-    wiki: '/Beatriz_da_Silva',
   },
   {
     id: 50,
@@ -399,7 +350,6 @@ const saints: Saint[] = [
     birth: 1474,
     decease: 1540,
     location: 'Desenzano del Garda, Itália',
-    wiki: '/Angela_Merici',
   },
   {
     id: 51,
@@ -407,14 +357,12 @@ const saints: Saint[] = [
     birth: 1474,
     decease: 1548,
     location: 'Cuautitlán, México',
-    wiki: '/Juan_Diego_Cuauhtlatoatzin',
   },
   {
     id: 52,
     name: 'São Tomás More',
     birth: 1478,
     decease: 1535,
-    wiki: '/Thomas_More',
     location: 'Londres, Reino Unido',
   },
   {
@@ -423,7 +371,6 @@ const saints: Saint[] = [
     birth: 1506,
     decease: 1552,
     location: 'Xavier, Espanha',
-    wiki: '/Francisco_Xavier',
   },
   {
     id: 54,
@@ -431,12 +378,10 @@ const saints: Saint[] = [
     location: 'Ávila, Espanha',
     birth: 1515,
     decease: 1582,
-    wiki: '/Teresa_de_Ávila',
   },
   {
     id: 55,
     name: 'São José de Anchieta',
-    wiki: '/José_de_Anchieta',
     location: 'Canárias, Império Espanhol',
     birth: 1534,
     decease: 1597,
@@ -447,7 +392,6 @@ const saints: Saint[] = [
     location: 'Fontiveros, Espanha',
     birth: 1542,
     decease: 1591,
-    wiki: '/João_da_Cruz',
   },
   {
     id: 57,
@@ -455,15 +399,13 @@ const saints: Saint[] = [
     birth: 1567,
     decease: 1622,
     location: 'Saboya, França',
-    wiki: '/Francisco_de_Sales',
   },
   {
     id: 58,
-    name: 'São Martinho de Porres',
+    name: 'São Martinho de Lima',
     birth: 1579,
     decease: 1639,
     location: 'Lima, Peru',
-    wiki: '/Martinho_de_Porres',
   },
   {
     id: 59,
@@ -471,7 +413,6 @@ const saints: Saint[] = [
     birth: 1581,
     decease: 1660,
     location: 'Pouy, França',
-    wiki: '/Vicente_de_Paulo',
   },
   {
     id: 60,
@@ -479,7 +420,6 @@ const saints: Saint[] = [
     birth: 1586,
     decease: 1617,
     location: 'Lima, Peru',
-    wiki: '/Rosa_de_Lima',
   },
   {
     id: 61,
@@ -487,7 +427,6 @@ const saints: Saint[] = [
     birth: 1647,
     decease: 1690,
     location: 'Verosvres, França',
-    wiki: '/Margarida_Maria_Alacoque',
   },
   {
     id: 62,
@@ -495,7 +434,6 @@ const saints: Saint[] = [
     birth: 1673,
     decease: 1716,
     location: 'Montfort-sur-Meu, França',
-    wiki: '/Luís_Maria_Grignion_de_Montfort',
   },
   {
     id: 63,
@@ -503,7 +441,6 @@ const saints: Saint[] = [
     location: 'Nápoles, Itália',
     birth: 1696,
     decease: 1787,
-    wiki: '/Afonso_de_Ligório',
   },
   {
     id: 64,
@@ -511,7 +448,6 @@ const saints: Saint[] = [
     birth: 1726,
     decease: 1755,
     location: 'Muro Lucano, Itália',
-    wiki: '/Geraldo_Majela',
   },
   {
     id: 65,
@@ -519,7 +455,6 @@ const saints: Saint[] = [
     birth: 1806,
     decease: 1876,
     location: 'Borgonha, França',
-    wiki: '/Catarina_Labouré',
   },
   {
     id: 66,
@@ -527,7 +462,6 @@ const saints: Saint[] = [
     birth: 1807,
     decease: 1870,
     location: 'Sallent, Espanha',
-    wiki: '/Antônio_Maria_Claret',
   },
   {
     id: 67,
@@ -535,7 +469,6 @@ const saints: Saint[] = [
     birth: 1837,
     decease: 1909,
     location: 'Goch, Alemanha',
-    wiki: '/Arnaldo_Janssen',
   },
   {
     id: 68,
@@ -543,13 +476,11 @@ const saints: Saint[] = [
     birth: 1842,
     decease: 1857,
     location: 'Piemonte, Itália',
-    wiki: '/Domingos_Sávio',
   },
   {
     name: 'Santa Bernadete',
     birth: 1844,
     decease: 1879,
-    wiki: '/Bernadette_Soubirous',
     id: 69,
     location: 'Lourdes, França',
   },
@@ -559,7 +490,6 @@ const saints: Saint[] = [
     birth: 1869,
     decease: 1947,
     location: 'Darfur, Sudão',
-    wiki: '/Josefina_Bakhita',
   },
   {
     id: 71,
@@ -567,7 +497,6 @@ const saints: Saint[] = [
     location: 'Lisieux, França',
     birth: 1873,
     decease: 1897,
-    wiki: '/Teresa_de_Lisieux',
   },
   {
     name: 'Santa Gemma Galgani',
@@ -575,7 +504,6 @@ const saints: Saint[] = [
     birth: 1878,
     decease: 1903,
     location: 'Capannori, Itália',
-    wiki: '/Gemma_Galgani',
   },
   {
     id: 73,
@@ -583,7 +511,6 @@ const saints: Saint[] = [
     location: 'Pietrelcina, Itália',
     birth: 1887,
     decease: 1968,
-    wiki: '/Padre_Pio',
   },
   {
     name: 'Santa Maria Goretti',
@@ -591,13 +518,11 @@ const saints: Saint[] = [
     decease: 1902,
     location: 'Corinaldo, Itália',
     id: 74,
-    wiki: '/Maria_Goretti',
   },
   {
     id: 75,
     name: 'São Maximiliano Kolbe',
     location: 'Zduńska Wola, Polônia',
-    wiki: '/Maximiliano_Maria_Kolbe',
     birth: 1894,
     decease: 1941,
   },
@@ -607,7 +532,6 @@ const saints: Saint[] = [
     birth: 1902,
     decease: 1975,
     location: 'Barbastro, Espanha',
-    wiki: '/Josemaría_Escrivá_de_Balaguer',
   },
   {
     id: 77,
@@ -615,7 +539,6 @@ const saints: Saint[] = [
     birth: 1905,
     decease: 1938,
     location: 'Głogowiec, Polônia',
-    wiki: '/Faustina_Kowalska',
   },
   {
     id: 78,
@@ -623,7 +546,6 @@ const saints: Saint[] = [
     birth: 1910,
     decease: 1997,
     location: 'Calcutá, Índia',
-    wiki: '/Madre_Teresa_de_Calcutá',
   },
   {
     id: 79,
@@ -631,7 +553,6 @@ const saints: Saint[] = [
     birth: 1914,
     decease: 1992,
     location: 'Bahia, Brasil',
-    wiki: '/Irmã_Dulce',
   },
   {
     id: 80,
@@ -639,7 +560,6 @@ const saints: Saint[] = [
     birth: 1920,
     decease: 2005,
     location: 'Wadowice, Polônia',
-    wiki: '/Papa_João_Paulo_II',
   },
   {
     id: 81,
@@ -647,7 +567,6 @@ const saints: Saint[] = [
     decease: 1595,
     birth: 1515,
     location: 'Florença, Itália',
-    wiki: 'Filipe_Néri',
   },
 ]
 
@@ -671,5 +590,4 @@ export { saints }
     location: 'Londres, Reino Unido',
   
     birth: 1991, decease: 2006,
-    wiki: '/Carlo_Acutis',
   }, */
